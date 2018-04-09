@@ -13,6 +13,7 @@ public class PlayerMovementController : MonoBehaviour {
     [SerializeField] private Sprite playerRightSprite;
     [SerializeField] private Sprite playerUpSprite;
     [SerializeField] private Sprite playerDownSprite;
+    private Sprite directionSprite;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     void Start () {
@@ -20,57 +21,63 @@ public class PlayerMovementController : MonoBehaviour {
         animator = GetComponent<Animator>();
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
         ProcessInput();
 	}
 
     private void ProcessInput()
     {
-        if (Input.GetKeyDown("W")) {
-            isWalkingUp = true;
-            spriteRenderer.sprite = playerUpSprite;
-            animator.SetBool("isWalkingUp", true);
-        }
-        if (Input.GetKeyDown("S"))
+        if (Input.GetKey(KeyCode.A))
         {
-            isWalkingDown = true;
-            spriteRenderer.sprite = playerDownSprite;
-            animator.SetBool("isWalkingDown", true);
-        }
-        if (Input.GetKeyDown("A"))
-        {
-            isWalkingLeft = true;
             spriteRenderer.sprite = playerLeftSprite;
             animator.SetBool("isWalkingLeft", true);
         }
-        if (Input.GetKeyDown("D"))
+        else if (Input.GetKey(KeyCode.D))
         {
-            isWalkingRight = true;
             spriteRenderer.sprite = playerRightSprite;
             animator.SetBool("isWalkingRight", true);
         }
-
-
-        if (Input.GetKeyUp("W"))
+        else if (Input.GetKey(KeyCode.S))
         {
-            isWalkingUp = false;
+            spriteRenderer.sprite = playerDownSprite;
+            animator.SetBool("isWalkingDown", true);
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            spriteRenderer.sprite = playerUpSprite;
+            animator.SetBool("isWalkingUp", true);
+        }
+
+
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            directionSprite = playerUpSprite;
             animator.SetBool("isWalkingUp", false);
         }
-        if (Input.GetKeyUp("S"))
+        if (Input.GetKeyUp(KeyCode.S))
         {
-            isWalkingDown = false;
+            directionSprite = playerDownSprite;
             animator.SetBool("isWalkingDown", false);
         }
-        if (Input.GetKeyUp("A"))
+        if (Input.GetKeyUp(KeyCode.A))
         {
-            isWalkingLeft = false;
+            directionSprite = playerLeftSprite;
             animator.SetBool("isWalkingLeft", false);
         }
-        if (Input.GetKeyUp("D"))
+        if (Input.GetKeyUp(KeyCode.D))
         {
-            isWalkingRight = false;
+            directionSprite = playerRightSprite;
             animator.SetBool("isWalkingRight", false);
         }
+        
+
+    }
+
+
+    public void SetDirectionSprite()
+    {
+        GetComponent<SpriteRenderer>().sprite = directionSprite;
     }
 }
