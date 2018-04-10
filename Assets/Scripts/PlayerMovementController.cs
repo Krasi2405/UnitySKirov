@@ -15,11 +15,14 @@ public class PlayerMovementController : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    private bool isInIdle = true;
+
 
 
     void Start () {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        directionSprite = playerDownSprite;
 	}
 	
 
@@ -34,37 +37,45 @@ public class PlayerMovementController : MonoBehaviour {
         animator.SetBool("isWalkingUp", false);
         animator.SetBool("isWalkingLeft", false);
         animator.SetBool("isWalkingRight", false);
+        isInIdle = false;
         if (xOffset > 0) // right
         {
             animator.SetBool("isWalkingRight", true);
             directionSprite = playerRightSprite;
-            SetDirectionSprite();
         }
         else if (xOffset < 0) // left
         {
 
             animator.SetBool("isWalkingLeft", true);
             directionSprite = playerLeftSprite;
-            SetDirectionSprite();
         }
         else if (yOffset > 0) // up
         {
             animator.SetBool("isWalkingUp", true);
             directionSprite = playerUpSprite;
-            SetDirectionSprite();
 
         }
         else if (yOffset < 0) // down
         {
             animator.SetBool("isWalkingDown", true);
             directionSprite = playerDownSprite;
-            SetDirectionSprite();
-
+            
+        }
+        else
+        {
+            isInIdle = true;
         }
         float Xposition = transform.position.x + xOffset;
         float Yposittion = transform.position.y + yOffset;
         transform.position = new Vector2(Xposition, Yposittion);
+    }
 
+    public void LateUpdate()
+    {
+        if (isInIdle)
+        {
+            SetDirectionSprite();
+        }
     }
 
 
