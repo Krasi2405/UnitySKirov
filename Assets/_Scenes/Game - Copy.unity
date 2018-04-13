@@ -327,7 +327,7 @@ MonoBehaviour:
   playerRightSprite: {fileID: 21300174, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
   playerUpSprite: {fileID: 21300120, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
   playerDownSprite: {fileID: 21300156, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
-  bodyAnimator: {fileID: 526006370}
+  bodyTransform: {fileID: 489907977}
 --- !u!1 &370519092
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,11 +468,6 @@ Prefab:
 --- !u!4 &489907977 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4329147909234562, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
-    type: 2}
-  m_PrefabInternal: {fileID: 489907976}
---- !u!95 &526006370 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 95159141181000346, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
     type: 2}
   m_PrefabInternal: {fileID: 489907976}
 --- !u!1 &758069034 stripped
