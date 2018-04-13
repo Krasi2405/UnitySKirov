@@ -203,11 +203,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 196847642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb94ec4b3dda59a4fa11e513a9b30a4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dd227a49f8341d42ab7d5e2b18f6909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 489907977}
-  followCoefficient: 0.15
+  followCoefficient: 0.1
 --- !u!1 &216818523
 GameObject:
   m_ObjectHideFlags: 0
