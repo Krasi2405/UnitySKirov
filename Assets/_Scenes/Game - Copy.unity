@@ -207,7 +207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 489907977}
-  delay: 0.2
 --- !u!1 &216818523
 GameObject:
   m_ObjectHideFlags: 0
