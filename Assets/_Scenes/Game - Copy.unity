@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 489907977}
+  followCoefficient: 0.15
 --- !u!1 &216818523
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +289,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 366622486}
+  - component: {fileID: 366622487}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -309,6 +311,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &366622487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366622485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78dc68db6199da1478521172cf29f2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  playerLeftSprite: {fileID: 21300138, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
+  playerRightSprite: {fileID: 21300174, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
+  playerUpSprite: {fileID: 21300120, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
+  playerDownSprite: {fileID: 21300156, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
+  bodyAnimator: {fileID: 526006370}
 --- !u!1 &370519092
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,12 +461,18 @@ Prefab:
       propertyPath: movementSpeed
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114873726147544514, guid: 0f299eae64b7eee4a8d9235f8e68ca0d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0f299eae64b7eee4a8d9235f8e68ca0d, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &489907977 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4329147909234562, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
+    type: 2}
+  m_PrefabInternal: {fileID: 489907976}
+--- !u!95 &526006370 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95159141181000346, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
     type: 2}
   m_PrefabInternal: {fileID: 489907976}
 --- !u!1 &758069034 stripped

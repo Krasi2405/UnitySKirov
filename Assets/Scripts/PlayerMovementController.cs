@@ -13,7 +13,7 @@ public class PlayerMovementController : MonoBehaviour {
     [SerializeField] private Sprite playerDownSprite;
     private Sprite directionSprite;
     private SpriteRenderer spriteRenderer;
-    private Animator animator;
+    [SerializeField] private Animator bodyAnimator;
 
     private bool isInIdle = true;
 
@@ -21,7 +21,6 @@ public class PlayerMovementController : MonoBehaviour {
 
     void Start () {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
         directionSprite = playerDownSprite;
 	}
 	
@@ -33,31 +32,31 @@ public class PlayerMovementController : MonoBehaviour {
         float xOffset = Input.GetAxis("Horizontal") * movementSpeed * Time.deltaTime;
         float yOffset = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
 
-        animator.SetBool("isWalkingDown", false);
-        animator.SetBool("isWalkingUp", false);
-        animator.SetBool("isWalkingLeft", false);
-        animator.SetBool("isWalkingRight", false);
+        bodyAnimator.SetBool("isWalkingDown", false);
+        bodyAnimator.SetBool("isWalkingUp", false);
+        bodyAnimator.SetBool("isWalkingLeft", false);
+        bodyAnimator.SetBool("isWalkingRight", false);
         isInIdle = false;
         if (xOffset > 0) // right
         {
-            animator.SetBool("isWalkingRight", true);
+            bodyAnimator.SetBool("isWalkingRight", true);
             directionSprite = playerRightSprite;
         }
         else if (xOffset < 0) // left
         {
 
-            animator.SetBool("isWalkingLeft", true);
+            bodyAnimator.SetBool("isWalkingLeft", true);
             directionSprite = playerLeftSprite;
         }
         else if (yOffset > 0) // up
         {
-            animator.SetBool("isWalkingUp", true);
+            bodyAnimator.SetBool("isWalkingUp", true);
             directionSprite = playerUpSprite;
 
         }
         else if (yOffset < 0) // down
         {
-            animator.SetBool("isWalkingDown", true);
+            bodyAnimator.SetBool("isWalkingDown", true);
             directionSprite = playerDownSprite;
             
         }
