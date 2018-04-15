@@ -550,6 +550,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1362835853 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1143270839791414, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
@@ -559,6 +560,8 @@ GameObject:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1328634981 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1414852058888818, guid: 100843b82eedbd1498729c394d3a1a49,
@@ -566,6 +569,9 @@ GameObject:
   m_PrefabInternal: {fileID: 1149989989}
 --- !u!114 &1328634982
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -573,6 +579,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1362835853}
@@ -587,6 +594,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1328634981}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -597,6 +606,9 @@ MonoBehaviour:
   armor: 5
   missChance: 0.1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
