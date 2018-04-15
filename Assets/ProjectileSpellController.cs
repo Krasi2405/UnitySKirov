@@ -9,7 +9,7 @@ public class ProjectileSpellController : MonoBehaviour {
 
     [SerializeField] private float spellCooldown = 5f;
 
-    private float spellCounter = 0f;
+    [SerializeField] private float spellCounter = 4f;
 
     public GameObject projectileSpell;
     void Start () {
@@ -31,10 +31,10 @@ public class ProjectileSpellController : MonoBehaviour {
     {
         if(spellCounter >= spellCooldown)
         {
-            GameObject projectile = Instantiate(projectileSpell, transform);
-            float x = Input.mousePosition.x;
-            float y = Input.mousePosition.y;
-            projectile.transform.position += new Vector3(transform.position.x + x, transform.position.y + y);
+            GameObject projectile = Instantiate(projectileSpell);
+            Vector3 spellPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            spellPosition.z = 0; // nai veroqtno shtoto kamerata e na -10 i za tui go slaga tam
+            projectile.transform.position = spellPosition;
             spellCounter = 0f;
         }
     }

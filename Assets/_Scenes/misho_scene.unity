@@ -699,7 +699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2a2678f15293e478b147a76eaca5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellCooldown: 5
+  spellCooldown: 0.1
+  spellCounter: 0
   projectileSpell: {fileID: 1494161615953584, guid: d7a86a6da9224234c93bd6b54d89e018,
     type: 2}
 --- !u!114 &1936756595
