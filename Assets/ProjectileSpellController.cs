@@ -7,9 +7,13 @@ public class ProjectileSpellController : MonoBehaviour {
 
     private Animator animator;
 
-    [SerializeField] private float spellCooldown = 5f;
+    [SerializeField] private float firstSpellCooldown = 5f;
+    [SerializeField] private float secondSpellCooldown = 5f;
+    [SerializeField] private float thirdSpellCooldown = 5f;
 
-    private float spellCounter = 0f;
+    private float firstSpellCounter = 0f;
+    private float secondSpellCounter = 0f;
+    private float thirdSpellCounter = 0f;
 
     void Start () {
         animator = GetComponent<Animator>();
@@ -17,19 +21,22 @@ public class ProjectileSpellController : MonoBehaviour {
 	
 
 	void Update () {
-        spellCounter += Time.deltaTime;
+        firstSpellCounter += Time.deltaTime;
+        secondSpellCounter += Time.deltaTime;
+        thirdSpellCounter += Time.deltaTime;
         if (Input.GetButton("Fire3"))
         {
             CastSpell();
         }
+        
 	}
 
     private void CastSpell()
     {
-        if(spellCounter >= spellCooldown)
+        if(firstSpellCounter >= firstSpellCooldown)
         {
-            // TODO: instantiate spell and give it velocity
-            spellCounter = 0f;
+            //Instantiate(PlayerFirstSpell, transform.position);
+            firstSpellCounter = 0f;
         }
     }
 }

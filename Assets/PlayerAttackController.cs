@@ -36,10 +36,12 @@ public class PlayerAttackController : MonoBehaviour {
     private void BasicAttack(float xDir, float yDir)
     {
         Vector2 start = transform.position;
-        int x = Mathf.CeilToInt(xDir);
-        int y = Mathf.CeilToInt(yDir);
+        float directionX = Mathf.Clamp(Input.mousePosition.x, -basicAttackRange, basicAttackRange);
+        float directionY = Mathf.Clamp(Input.mousePosition.x, -basicAttackRange, basicAttackRange);
+        //int x = Mathf.CeilToInt(xDir);
+        //int y = Mathf.CeilToInt(yDir);
 
-        Vector2 end = start + new Vector2(x * basicAttackRange, y * basicAttackRange);
+        Vector2 end = start + new Vector2(directionX, directionY);
         RaycastHit2D result = Physics2D.Linecast(start, end);
         if (result.transform.tag == "enemy")
         {

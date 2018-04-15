@@ -15,7 +15,6 @@ public class PlayerMovementController : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private Animator bodyAnimator;
     [SerializeField] private Transform bodyTransform;
-    private Rigidbody2D rb2D;
 
     private bool isInIdle = true;
 
@@ -25,7 +24,6 @@ public class PlayerMovementController : MonoBehaviour {
         spriteRenderer = bodyTransform.GetComponent<SpriteRenderer>();
         bodyAnimator = bodyTransform.GetComponent<Animator>();
         directionSprite = playerDownSprite;
-        rb2D = bodyTransform.GetComponent<Rigidbody2D>();
 	}
 	
 
@@ -71,15 +69,11 @@ public class PlayerMovementController : MonoBehaviour {
         {
             isInIdle = true;
         }
-        //float Xposition = transform.position.x + xOffset;
-        //float Yposittion = transform.position.y + yOffset;
+        float Xposition = transform.position.x + xOffset;
+        float Yposittion = transform.position.y + yOffset;
 
-        //transform.position = new Vector2(Xposition, Yposittion);
-        Vector2 start = transform.position;
-        Vector2 end = start + new Vector2(rawHorizontal, rawVertical);
-        Vector2 newPosition = Vector2.MoveTowards(start, end, movementSpeed * Time.deltaTime);
+        transform.position = new Vector2(Xposition, Yposittion);
 
-        rb2D.MovePosition(newPosition);
     }
 
     public void LateUpdate()
