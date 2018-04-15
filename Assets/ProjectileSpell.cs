@@ -5,13 +5,15 @@ using UnityEngine;
 public class ProjectileSpell : MonoBehaviour {
 
     [SerializeField] private int damage = 10;
+    public Vector3 direction;
+    [SerializeField] private float speed = 10;
 
 	void Start () {
 		
 	}
 	
 	void Update () {
-		
+        transform.position += direction * Time.deltaTime * speed;
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,7 +21,6 @@ public class ProjectileSpell : MonoBehaviour {
         {
             var playerScript = collision.gameObject.GetComponent<HitController>();
             playerScript.TakeDamage(damage);
-
             Destroy(this);
         }
     }

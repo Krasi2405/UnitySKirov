@@ -34,7 +34,8 @@ public class ProjectileSpellController : MonoBehaviour {
             GameObject projectile = Instantiate(projectileSpell);
             Vector3 spellPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             spellPosition.z = 0; // nai veroqtno shtoto kamerata e na -10 i za tui go slaga tam
-            projectile.transform.position = spellPosition;
+            projectile.transform.position = transform.position;
+            projectile.GetComponent<ProjectileSpell>().direction = Vector3.Normalize(spellPosition - transform.position);
             spellCounter = 0f;
         }
     }
