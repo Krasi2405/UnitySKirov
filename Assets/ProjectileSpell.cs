@@ -19,8 +19,8 @@ public class ProjectileSpell : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            var playerScript = collision.gameObject.GetComponent<HitController>();
-            playerScript.TakeDamage(damage);
+            var enemyScript = collision.gameObject.GetComponent<HitController>();
+            enemyScript.TakeDamage(damage);
             Destroy(this);
         }
     }

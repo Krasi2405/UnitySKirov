@@ -37,6 +37,7 @@ public class ProjectileSpellController : MonoBehaviour {
             projectile.transform.position = transform.position;
             projectile.GetComponent<ProjectileSpell>().direction = Vector3.Normalize(spellPosition - transform.position);
             spellCounter = 0f;
+            Destroy(projectile, 2f);
         }
     }
 }

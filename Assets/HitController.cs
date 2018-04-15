@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,10 +23,19 @@ public class HitController : MonoBehaviour {
     }
     public void TakeHit(int ammount)
     {
-        if(Random.Range(0,1) > missChance)
+        if(UnityEngine.Random.Range(0,1) > missChance)
         {
             float loss = (armor % 100) * ammount;
             hp = hp - Mathf.RoundToInt(loss);
+        }
+        CheckDead();
+    }
+
+    private void CheckDead()
+    {
+        if(hp <= 0) // dead
+        {
+            Debug.Log("Dead");
         }
     }
 }
