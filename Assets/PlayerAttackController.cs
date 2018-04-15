@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PlayerAttackController : MonoBehaviour {
 
-    public int hp = 100;
     public float damage = 10f;
-    [Range(0, 100)] public float armor = 5f;
-    public float missChance = 0.1f;
     public int spinAttackRange = 10;
     public int basicAttackRange = 10;
 
@@ -66,4 +63,5 @@ public class PlayerAttackController : MonoBehaviour {
             }
         }
     }
+
 }

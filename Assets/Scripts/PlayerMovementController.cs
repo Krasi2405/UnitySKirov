@@ -35,7 +35,6 @@ public class PlayerMovementController : MonoBehaviour {
         float rawVertical = Input.GetAxis("Vertical");
         float xOffset = rawHorizontal * movementSpeed * Time.deltaTime;
         float yOffset = rawVertical * movementSpeed * Time.deltaTime;
-        Debug.Log("Input x, y: " + Input.GetAxis("Horizontal") + ", " + Input.GetAxis("Vertical"));
 
         bodyAnimator.SetBool("isWalkingDown", false);
         bodyAnimator.SetBool("isWalkingUp", false);

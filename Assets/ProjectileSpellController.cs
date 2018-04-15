@@ -7,25 +7,21 @@ public class ProjectileSpellController : MonoBehaviour {
 
     private Animator animator;
 
-    [SerializeField] private float firstSpellCooldown = 5f;
-    [SerializeField] private float secondSpellCooldown = 5f;
-    [SerializeField] private float thirdSpellCooldown = 5f;
+    [SerializeField] private float spellCooldown = 5f;
 
-    private float firstSpellCounter = 0f;
-    private float secondSpellCounter = 0f;
-    private float thirdSpellCounter = 0f;
+    private float spellCounter = 0f;
 
+    public GameObject projectileSpell;
     void Start () {
         animator = GetComponent<Animator>();
 	}
 	
 
 	void Update () {
-        firstSpellCounter += Time.deltaTime;
-        secondSpellCounter += Time.deltaTime;
-        thirdSpellCounter += Time.deltaTime;
-        if (Input.GetButton("Fire3"))
+        spellCounter += Time.deltaTime;
+        if (Input.GetButton("Fire1"))
         {
+            Debug.Log("Cast a spell");
             CastSpell();
         }
         
@@ -33,10 +29,13 @@ public class ProjectileSpellController : MonoBehaviour {
 
     private void CastSpell()
     {
-        if(firstSpellCounter >= firstSpellCooldown)
+        if(spellCounter >= spellCooldown)
         {
-            //Instantiate(PlayerFirstSpell, transform.position);
-            firstSpellCounter = 0f;
+            GameObject projectile = Instantiate(projectileSpell, transform);
+            float x = Input.mousePosition.x;
+            float y = Input.mousePosition.y;
+            projectile.transform.position += new Vector3(transform.position.x + x, transform.position.y + y);
+            spellCounter = 0f;
         }
     }
 }
