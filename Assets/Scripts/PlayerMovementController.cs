@@ -28,9 +28,9 @@ public class PlayerMovementController : MonoBehaviour {
 	
 
 	void Update () {
-        ProcessInput();
+        Move();
 	}
-    private void ProcessInput() {
+    private void Move() {
         float rawHorizontal = Input.GetAxis("Horizontal");
         float rawVertical = Input.GetAxis("Vertical");
         float xOffset = rawHorizontal * movementSpeed * Time.deltaTime;

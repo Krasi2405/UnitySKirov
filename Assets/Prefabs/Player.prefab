@@ -70,10 +70,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78dc68db6199da1478521172cf29f2ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 1
   playerLeftSprite: {fileID: 21300138, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
   playerRightSprite: {fileID: 21300174, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
   playerUpSprite: {fileID: 21300120, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
   playerDownSprite: {fileID: 21300156, guid: 13dc6531bb2e8444eb11b64e7afd4a5f, type: 3}
+  bodyTransform: {fileID: 0}
 --- !u!212 &212097962179317042
 SpriteRenderer:
   m_ObjectHideFlags: 1

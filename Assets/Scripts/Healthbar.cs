@@ -5,14 +5,14 @@ using UnityEngine;
 public class Healthbar : UIBar {
 
 
-    HitController hitController;
+    DamageController hitController;
 
     // TODO: call everything from HitController!;
 
     private void Start()
     {
-        hitController = FindObjectOfType<HitController>();
-        SetMaxAmount(hitController.hp);
+        hitController = FindObjectOfType<DamageController>();
+        SetMaxAmount(hitController.maxHp);
     }
 
     private void Update()

@@ -36,6 +36,6 @@ public class UIBar : MonoBehaviour {
     public void ChangeUIBar()
     {
         image.fillAmount = currentAmount / maxAmount;
-        Debug.Log("change uibar to " + currentAmount / maxAmount);
+        //Debug.Log("change uibar to " + currentAmount / maxAmount);
     }
 }

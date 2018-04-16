@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerAttackController : MonoBehaviour {
 
-    public float damage = 10f;
+    
     public int spinAttackRange = 10;
+    public int spinAttackDamage = 10;
+
     public int basicAttackRange = 10;
+    public int basicAttackDamage = 10;
 
     private Animator animator;
 
@@ -42,9 +45,9 @@ public class PlayerAttackController : MonoBehaviour {
         RaycastHit2D result = Physics2D.Linecast(start, end);
         if (result.transform.tag == "enemy")
         {
-            // play basicAttack animation
-            //var enemyScript = result.transform.GetComponent<Enemy>()
-            //enemyScript.TakeHit(damage);
+
+            var enemyScript = result.transform.GetComponent<DamageController>();
+            enemyScript.TakeHit(basicAttackDamage);
         }
     }
     private void SpinAttack()
@@ -57,9 +60,8 @@ public class PlayerAttackController : MonoBehaviour {
         {
             if (result.transform.tag == "enemy")
             {
-                // play spinAttack animation
-                //var enemyScript = result.transform.GetComponent<Enemy>()
-                //enemyScript.TakeHit(damage);
+                var enemyScript = result.transform.GetComponent<DamageController>();
+                enemyScript.TakeHit(spinAttackDamage);
             }
         }
     }

@@ -19,7 +19,7 @@ public class ProjectileSpell : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            var enemyScript = collision.gameObject.GetComponent<HitController>();
+            var enemyScript = collision.gameObject.GetComponent<DamageController>();
             enemyScript.TakeDamage(damage);
             Destroy(this);
         }
