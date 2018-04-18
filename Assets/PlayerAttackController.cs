@@ -43,11 +43,11 @@ public class PlayerAttackController : MonoBehaviour {
 
         Vector2 end = start + new Vector2(directionX, directionY);
         RaycastHit2D result = Physics2D.Linecast(start, end);
-        if (result.transform.tag == "enemy")
+        if (result.transform.tag == "Enemy")
         {
 
             var enemyScript = result.transform.GetComponent<DamageController>();
-            enemyScript.TakeHit(basicAttackDamage);
+            enemyScript.TakePhysicalHit(basicAttackDamage);
         }
     }
     private void SpinAttack()
@@ -58,10 +58,10 @@ public class PlayerAttackController : MonoBehaviour {
 
         foreach (RaycastHit2D result in results)
         {
-            if (result.transform.tag == "enemy")
+            if (result.transform.tag == "Enemy" || result.transform.tag == "Player")
             {
                 var enemyScript = result.transform.GetComponent<DamageController>();
-                enemyScript.TakeHit(spinAttackDamage);
+                enemyScript.TakePhysicalHit(spinAttackDamage);
             }
         }
     }

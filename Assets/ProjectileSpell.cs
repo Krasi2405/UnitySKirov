@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class ProjectileSpell : MonoBehaviour {
 
-    [SerializeField] private int damage = 10;
     public Vector3 direction;
+    public float spellDistance;
     [SerializeField] private float speed = 10;
 
-	void Start () {
-		
-	}
-	
-	void Update () {
-        transform.position += direction * Time.deltaTime * speed;
-	}
-    private void OnTriggerEnter2D(Collider2D collision)
+    private Vector2 start;
+
+    private void Start()
     {
-        if(collision.gameObject.tag == "Enemy")
-        {
-            var enemyScript = collision.gameObject.GetComponent<DamageController>();
-            enemyScript.TakeDamage(damage);
-            Destroy(this);
-        }
+        start = transform.position;
     }
+
+    void Update () {
+        transform.position += direction * Time.deltaTime * speed;
+        if(Vector2.Distance(transform.position, start) > spellDistance)
+        {
+            Destroy(gameObject);
+        }
+	}
+
 }
