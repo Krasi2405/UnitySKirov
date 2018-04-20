@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manabar : UIBar {
+public class Manabar : Stat {
     
 }
