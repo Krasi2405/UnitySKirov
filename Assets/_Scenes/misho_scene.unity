@@ -778,4 +778,3 @@ MonoBehaviour:
   manabar: {fileID: 758069038}
   maxHp: 500
   maxMana: 200
-  currentHp: 400
