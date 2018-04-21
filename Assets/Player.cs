@@ -27,10 +27,8 @@ public class Player : Character
     {
         base.Update();
         GetInput();
-        if (rawHorizontal != 0 || rawVertical != 0)
-        {
-            Move(rawHorizontal, rawVertical);
-        }
+        Move(rawHorizontal, rawVertical);
+
 
     }
 

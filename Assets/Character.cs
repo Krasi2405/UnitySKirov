@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,26 +8,16 @@ public class Character : MonoBehaviour {
 
     public int movementSpeed = 1;
 
-    [SerializeField] private Sprite playerLeftSprite;
-    [SerializeField] private Sprite playerRightSprite;
-    [SerializeField] private Sprite playerUpSprite;
-    [SerializeField] private Sprite playerDownSprite;
+    private Animator animator;
 
-    private Sprite directionSprite;
-    private SpriteRenderer spriteRenderer;
-    private Animator bodyAnimator;
-    [SerializeField] private Transform bodyTransform;
+    //private Vector2 direction;
 
-
-    private bool isInIdle = true;
     protected float rawHorizontal = 0f, rawVertical = 0f;
 
 
     protected virtual void Start()
     {
-        spriteRenderer = bodyTransform.GetComponent<SpriteRenderer>();
-        bodyAnimator = bodyTransform.GetComponent<Animator>();
-        directionSprite = playerDownSprite;
+        animator = GetComponent<Animator>();
     }
 
     protected virtual void Update()
@@ -41,57 +32,26 @@ public class Character : MonoBehaviour {
         float xOffset = rawHorizontal * movementSpeed * Time.deltaTime;
         float yOffset = rawVertical * movementSpeed * Time.deltaTime;
 
-        bodyAnimator.SetBool("isWalkingDown", false);
-        bodyAnimator.SetBool("isWalkingUp", false);
-        bodyAnimator.SetBool("isWalkingLeft", false);
-        bodyAnimator.SetBool("isWalkingRight", false);
-        isInIdle = false;
-        if (rawHorizontal > 0 && rawHorizontal >= rawVertical) // right
-        {
-            bodyAnimator.SetBool("isWalkingRight", true);
-            directionSprite = playerRightSprite;
-        }
-        else if (rawHorizontal < 0 && rawHorizontal <= rawVertical) // left
-        {
-
-            bodyAnimator.SetBool("isWalkingLeft", true);
-            directionSprite = playerLeftSprite;
-        }
-        else if (rawVertical > 0 && rawVertical > rawHorizontal) // up
-        {
-            bodyAnimator.SetBool("isWalkingUp", true);
-            directionSprite = playerUpSprite;
-
-        }
-        else if (rawVertical < 0 && rawVertical < rawHorizontal) // down
-        {
-            bodyAnimator.SetBool("isWalkingDown", true);
-            directionSprite = playerDownSprite;
-
-        }
-        else
-        {
-            isInIdle = true;
-        }
         float Xposition = transform.position.x + xOffset;
         float Yposittion = transform.position.y + yOffset;
 
         transform.position = new Vector2(Xposition, Yposittion);
 
-    }
-
-    public void LateUpdate()
-    {
-        if (isInIdle)
+        if (rawHorizontal != 0 || rawVertical != 0)
         {
-            SetDirectionSprite();
+            AnimateMovement(rawHorizontal, rawVertical);
+        }
+        else {
+            animator.SetLayerWeight(1, 0);
         }
     }
 
-
-
-    public void SetDirectionSprite()
+    private void AnimateMovement(float rawHorizontal, float rawVertical)
     {
-        spriteRenderer.sprite = directionSprite;
+        animator.SetLayerWeight(1, 1);
+
+        animator.SetFloat("x", rawHorizontal);
+        animator.SetFloat("y", rawVertical);
     }
+
 }

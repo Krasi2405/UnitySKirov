@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class Stat : MonoBehaviour {
 
-    private int maxAmount = 100;
     [SerializeField]private float lerpSpeed = 1;
 
-    private int currentAmount;
+    private float maxAmount;
+    private float currentAmount;
     private Image image;
     private float currentFill = 1;
 
@@ -17,19 +17,19 @@ public class Stat : MonoBehaviour {
         currentAmount = maxAmount;
     }
 
-    public void InitStat(int current, int max)
+    public void InitStat(float current, float max)
     {
         currentAmount = current;
         maxAmount = max;
     }
     
-    public void SetMaxAmount(int amount)
+    public void SetMaxAmount(float amount)
     {
         maxAmount = amount;
     } 
 
     
-    public void SetCurrentAmount(int amount)
+    public void SetCurrentAmount(float amount)
     {
         Debug.Log("Called");
         if (amount > maxAmount)
