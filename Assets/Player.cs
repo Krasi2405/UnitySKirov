@@ -12,6 +12,8 @@ public class Player : Character
 
     private int currentMana;
     private int currentHp;
+
+
     protected override void Start()
     {
         base.Start();
@@ -49,8 +51,25 @@ public class Player : Character
             healthbar.SetCurrentAmount(currentHp);
             manabar.SetCurrentAmount(currentMana);
         }
+        if (Input.GetButton("Fire1"))
+        {
+            castRoutine = StartCoroutine(Attack());
+        }
+
         float rawHorizontal = Input.GetAxisRaw("Horizontal");
         float rawVertical = Input.GetAxisRaw("Vertical");
         direction = new Vector2(rawHorizontal, rawVertical);
     }
+
+    private IEnumerator Attack()
+    {
+ 
+        animator.SetBool("isCasting", true);
+        isCasting = true;
+
+        yield return new WaitForSeconds(5);
+        StopCast();
+        Debug.Log("Done casting");
+    }
+
 }

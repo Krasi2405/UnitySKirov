@@ -8,11 +8,12 @@ public class Character : MonoBehaviour {
 
     public int movementSpeed = 1;
 
-    private Animator animator;
+    protected Animator animator;
 
     private Rigidbody2D rigidbody;
 
     protected Vector2 direction;
+    protected Coroutine castRoutine;
 
     protected bool isMoving {
         get
@@ -20,6 +21,7 @@ public class Character : MonoBehaviour {
             return direction.x != 0 || direction.y != 0;
         }
     }
+    protected bool isCasting = false;
 
     protected virtual void Start()
     {
@@ -42,6 +44,12 @@ public class Character : MonoBehaviour {
             ActivateLayer("walk");
             animator.SetFloat("x", direction.x);
             animator.SetFloat("y", direction.y);
+
+            StopCast();
+        }
+        else if (isCasting)
+        {
+            ActivateLayer("cast");
         }
         else
         {
@@ -63,5 +71,13 @@ public class Character : MonoBehaviour {
         animator.SetLayerWeight(animator.GetLayerIndex(layerName), 1);
     }
 
-
+    public void StopCast()
+    {
+        if (castRoutine != null)
+        {
+            StopCoroutine(castRoutine);
+            isCasting = false;
+            animator.SetBool("isCasting", false);
+        }
+    }
 }
