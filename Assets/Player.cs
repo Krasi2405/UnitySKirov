@@ -50,7 +50,7 @@ public class Player : Character
             manabar.SetCurrentAmount(currentMana);
         }
         float rawHorizontal = Input.GetAxisRaw("Horizontal");
-        float rawVertical = Input.GetAxis("Vertical");
+        float rawVertical = Input.GetAxisRaw("Vertical");
         direction = new Vector2(rawHorizontal, rawVertical);
     }
 }
