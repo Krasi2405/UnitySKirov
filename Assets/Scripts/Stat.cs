@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Stat : MonoBehaviour {
 
     [SerializeField]private float lerpSpeed = 1;
-
+    [SerializeField]private Text statText;
     private float maxAmount;
     private float currentAmount;
     private Image image;
@@ -44,6 +44,7 @@ public class Stat : MonoBehaviour {
             currentAmount = amount;
         }
         currentFill = currentAmount / maxAmount;
+        statText.text = currentAmount + " / " + maxAmount;
     }
 
     private void Update()

@@ -10,48 +10,58 @@ public class Character : MonoBehaviour {
 
     private Animator animator;
 
-    //private Vector2 direction;
+    private Rigidbody2D rigidbody;
 
-    protected float rawHorizontal = 0f, rawVertical = 0f;
+    protected Vector2 direction;
 
+    protected bool isMoving {
+        get
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
+    }
 
     protected virtual void Start()
     {
+        rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
     protected virtual void Update()
     {
-
+        HandleLayers();
     }
-
-
-    protected void Move(float rawHorizontal, float rawVertical)
+    private void FixedUpdate()
     {
-
-        float xOffset = rawHorizontal * movementSpeed * Time.deltaTime;
-        float yOffset = rawVertical * movementSpeed * Time.deltaTime;
-
-        float Xposition = transform.position.x + xOffset;
-        float Yposittion = transform.position.y + yOffset;
-
-        transform.position = new Vector2(Xposition, Yposittion);
-
-        if (rawHorizontal != 0 || rawVertical != 0)
+        Move();   
+    }
+    public void HandleLayers()
+    {
+        if (isMoving)
         {
-            AnimateMovement(rawHorizontal, rawVertical);
+            ActivateLayer("walk");
+            animator.SetFloat("x", direction.x);
+            animator.SetFloat("y", direction.y);
         }
-        else {
-            animator.SetLayerWeight(1, 0);
+        else
+        {
+            ActivateLayer("idle");
         }
     }
 
-    private void AnimateMovement(float rawHorizontal, float rawVertical)
+    protected void Move()
     {
-        animator.SetLayerWeight(1, 1);
-
-        animator.SetFloat("x", rawHorizontal);
-        animator.SetFloat("y", rawVertical);
+        rigidbody.velocity = direction.normalized * movementSpeed;
     }
+
+    private void ActivateLayer(string layerName)
+    {
+        for(int i = 0; i < animator.layerCount; i++)
+        {
+            animator.SetLayerWeight(i, 0);
+        }
+        animator.SetLayerWeight(animator.GetLayerIndex(layerName), 1);
+    }
+
 
 }

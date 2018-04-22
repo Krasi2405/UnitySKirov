@@ -27,7 +27,6 @@ public class Player : Character
     {
         base.Update();
         GetInput();
-        Move(rawHorizontal, rawVertical);
 
 
     }
@@ -50,7 +49,8 @@ public class Player : Character
             healthbar.SetCurrentAmount(currentHp);
             manabar.SetCurrentAmount(currentMana);
         }
-        rawHorizontal = Input.GetAxisRaw("Horizontal");
-        rawVertical = Input.GetAxis("Vertical");
+        float rawHorizontal = Input.GetAxisRaw("Horizontal");
+        float rawVertical = Input.GetAxis("Vertical");
+        direction = new Vector2(rawHorizontal, rawVertical);
     }
 }
