@@ -7,12 +7,13 @@ public class Player : Character
 {
     [SerializeField] private Stat healthbar;
     [SerializeField] private Stat manabar;
+    [SerializeField] GameObject[] spellPrefab;
     public int maxHp = 500;
     public int maxMana = 200;
 
     private int currentMana;
     private int currentHp;
-
+    
 
     protected override void Start()
     {
@@ -51,9 +52,12 @@ public class Player : Character
             healthbar.SetCurrentAmount(currentHp);
             manabar.SetCurrentAmount(currentMana);
         }
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
-            castRoutine = StartCoroutine(Attack());
+            if (!isMoving && !isCasting)
+            {
+                castRoutine = StartCoroutine(Cast());
+            }
         }
 
         float rawHorizontal = Input.GetAxisRaw("Horizontal");
@@ -61,15 +65,22 @@ public class Player : Character
         direction = new Vector2(rawHorizontal, rawVertical);
     }
 
-    private IEnumerator Attack()
+    private IEnumerator Cast()
     {
- 
-        animator.SetBool("isCasting", true);
         isCasting = true;
+        animator.SetBool("isCasting", true);
+        
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
+        CastSpell();
         StopCast();
+
+       
         Debug.Log("Done casting");
     }
 
+    private void CastSpell()
+    {
+        Instantiate(spellPrefab[0], transform.position, Quaternion.identity);
+    }
 }

@@ -75,8 +75,8 @@ public class Character : MonoBehaviour {
     {
         if (castRoutine != null)
         {
-            StopCoroutine(castRoutine);
             isCasting = false;
+            StopCoroutine(castRoutine);
             animator.SetBool("isCasting", false);
         }
     }
