@@ -54,33 +54,40 @@ public class Player : Character
         }
         if (Input.GetButtonDown("Fire1"))
         {
-            if (!isMoving && !isCasting)
-            {
-                castRoutine = StartCoroutine(Cast());
-            }
+            CastSpell(0);
         }
-
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            StopCast();
+        }
         float rawHorizontal = Input.GetAxisRaw("Horizontal");
         float rawVertical = Input.GetAxisRaw("Vertical");
         direction = new Vector2(rawHorizontal, rawVertical);
     }
 
-    private IEnumerator Cast()
+    private IEnumerator Cast(int spellIndex)
     {
         isCasting = true;
         animator.SetBool("isCasting", true);
         
 
         yield return new WaitForSeconds(1);
-        CastSpell();
+
+        Instantiate(spellPrefab[spellIndex], transform.position, Quaternion.identity);
+
+        Debug.Log("Done casting");
+
         StopCast();
 
-       
-        Debug.Log("Done casting");
     }
 
-    private void CastSpell()
+    public void CastSpell(int spellIndex)
     {
-        Instantiate(spellPrefab[0], transform.position, Quaternion.identity);
+
+        if (!isMoving && !isCasting)
+        {
+            castRoutine = StartCoroutine(Cast(spellIndex));
+        }
+       
     }
 }
