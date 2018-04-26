@@ -389,6 +389,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1155636345}
   delay: 0.15
+--- !u!1 &256845114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 256845115}
+  m_Layer: 0
+  m_Name: UImanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &256845115
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 256845114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 436, y: 205.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &273318448 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224093285026751622, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
@@ -1328,6 +1356,21 @@ MonoBehaviour:
   - {fileID: 1689322394514548, guid: 95ca06df18642414582894547b1addff, type: 2}
   maxHp: 500
   maxMana: 200
+  spellCooldown:
+  - 5
+  - 5
+  - 5
+  - 10
+  castRange:
+  - 2
+  - 3
+  - 4
+  - 5
+  castTime:
+  - 1
+  - 1
+  - 1
+  - 2
 --- !u!50 &1936756595
 Rigidbody2D:
   serializedVersion: 4

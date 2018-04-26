@@ -8,12 +8,17 @@ public class Player : Character
     [SerializeField] private Stat healthbar;
     [SerializeField] private Stat manabar;
     [SerializeField] GameObject[] spellPrefab;
+
     public int maxHp = 500;
     public int maxMana = 200;
 
     private int currentMana;
     private int currentHp;
-    
+    private float[] lastCasted = new float[4];
+
+    public float[] spellCooldown;
+    public float[] castRange;
+    public float[] castTime;
 
     protected override void Start()
     {
@@ -23,12 +28,17 @@ public class Player : Character
 
         healthbar.InitStat(currentHp, maxHp);
         manabar.InitStat(currentMana, maxMana);
+        for(int i = 0; i < lastCasted.Length; i++)
+        {
+            lastCasted[i] = Time.time;
+        }
     }
 
 
     protected override void Update()
     {
         base.Update();
+
         GetInput();
 
 
@@ -65,15 +75,14 @@ public class Player : Character
         direction = new Vector2(rawHorizontal, rawVertical);
     }
 
-    private IEnumerator Cast(int spellIndex)
+    private IEnumerator CastAnimation(int spellIndex)
     {
         isCasting = true;
         animator.SetBool("isCasting", true);
         
 
-        yield return new WaitForSeconds(1);
-
-        Instantiate(spellPrefab[spellIndex], transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(castTime[spellIndex]);
+        Cast(spellIndex);
 
         Debug.Log("Done casting");
 
@@ -81,12 +90,26 @@ public class Player : Character
 
     }
 
+    private void Cast(int spellIndex)
+    {
+        lastCasted[spellIndex] = Time.time;
+        Instantiate(spellPrefab[spellIndex], transform.position, Quaternion.identity);
+    }
+
     public void CastSpell(int spellIndex)
     {
-
-        if (!isMoving && !isCasting)
+        Vector2 mousePosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
+        float distance = Vector2.Distance(transform.position, mousePosition);
+        float timeSinceLastCast = Time.time - lastCasted[spellIndex];
+        if(distance > castRange[spellIndex])
         {
-            castRoutine = StartCoroutine(Cast(spellIndex));
+            direction = mousePosition - (Vector2)transform.position;
+            Move();
+        }
+
+        else if (!isMoving && !isCasting && timeSinceLastCast >= spellCooldown[spellIndex])
+        {
+            castRoutine = StartCoroutine(CastAnimation(spellIndex));
         }
        
     }

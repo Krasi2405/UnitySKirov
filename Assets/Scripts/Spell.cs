@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spell : MonoBehaviour {
 
     private Rigidbody2D rigidbody;
-    private Transform target;
+    public Transform target;
     [SerializeField] private float speed;
 
 	void Start () {

@@ -45,6 +45,8 @@ public class Character : MonoBehaviour {
             animator.SetFloat("x", direction.x);
             animator.SetFloat("y", direction.y);
 
+            StopCast();
+
         }
         else if (isCasting)
         {
