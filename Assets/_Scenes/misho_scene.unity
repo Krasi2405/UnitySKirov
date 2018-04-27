@@ -397,6 +397,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 256845115}
+  - component: {fileID: 256845116}
   m_Layer: 0
   m_Name: UImanager
   m_TagString: Untagged
@@ -417,6 +418,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256845116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 256845114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb30603d5d0a80c4cad478c61aea669e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1328422624}
+  - {fileID: 512169762}
+  - {fileID: 455070509}
+  - {fileID: 78502887}
 --- !u!224 &273318448 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224093285026751622, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
@@ -1294,6 +1311,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1383623043427716, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
+      propertyPath: m_Name
+      value: Glass- Spell 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713412361361984, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
+      propertyPath: m_Name
+      value: Glass - Spell 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497621320677124, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
+      propertyPath: m_Name
+      value: Glass - Spell 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114430296557539424, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
     - {fileID: 114764767920990968, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
@@ -1349,28 +1378,8 @@ MonoBehaviour:
   movementSpeed: 10
   healthbar: {fileID: 966136876}
   manabar: {fileID: 758069038}
-  spellPrefab:
-  - {fileID: 1695687064251586, guid: 6980b404125cf324e94b000e5021ebea, type: 2}
-  - {fileID: 1698446834538450, guid: c8ee85d5f002b744f810fe9dd63e5135, type: 2}
-  - {fileID: 1544479142769572, guid: dba9072988f994947aa001b15d4fc2e5, type: 2}
-  - {fileID: 1689322394514548, guid: 95ca06df18642414582894547b1addff, type: 2}
   maxHp: 500
   maxMana: 200
-  spellCooldown:
-  - 5
-  - 5
-  - 5
-  - 10
-  castRange:
-  - 2
-  - 3
-  - 4
-  - 5
-  castTime:
-  - 1
-  - 1
-  - 1
-  - 2
 --- !u!50 &1936756595
 Rigidbody2D:
   serializedVersion: 4
@@ -1391,3 +1400,55 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1936756596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1936756592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a61229099ac014fae0601a16f7e267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spells:
+  - name: Fireball
+    damage: 20
+    icon: {fileID: 0}
+    speed: 5
+    castTime: 2
+    prefab: {fileID: 1695687064251586, guid: 6980b404125cf324e94b000e5021ebea, type: 2}
+    barColor: {r: 0, g: 0, b: 0, a: 0}
+    hasCastRange: 1
+    castRange: 5
+    cooldown: 5
+  - name: Waterball
+    damage: 10
+    icon: {fileID: 0}
+    speed: 10
+    castTime: 1
+    prefab: {fileID: 1698446834538450, guid: c8ee85d5f002b744f810fe9dd63e5135, type: 2}
+    barColor: {r: 0, g: 0, b: 0, a: 0}
+    hasCastRange: 1
+    castRange: 5
+    cooldown: 2
+  - name: Lighting strike
+    damage: 40
+    icon: {fileID: 0}
+    speed: 50
+    castTime: 3
+    prefab: {fileID: 1544479142769572, guid: dba9072988f994947aa001b15d4fc2e5, type: 2}
+    barColor: {r: 0, g: 0, b: 0, a: 0}
+    hasCastRange: 1
+    castRange: 5
+    cooldown: 15
+  - name: Trap
+    damage: 100
+    icon: {fileID: 0}
+    speed: 0
+    castTime: 0.5
+    prefab: {fileID: 1689322394514548, guid: 95ca06df18642414582894547b1addff, type: 2}
+    barColor: {r: 0, g: 0, b: 0, a: 0}
+    hasCastRange: 1
+    castRange: 0
+    cooldown: 30

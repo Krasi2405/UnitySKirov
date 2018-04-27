@@ -7,18 +7,15 @@ public class Player : Character
 {
     [SerializeField] private Stat healthbar;
     [SerializeField] private Stat manabar;
-    [SerializeField] GameObject[] spellPrefab;
+    private Vector2 mousePosition;
 
     public int maxHp = 500;
     public int maxMana = 200;
 
     private int currentMana;
     private int currentHp;
-    private float[] lastCasted = new float[4];
+    private SpellBook spellbook;
 
-    public float[] spellCooldown;
-    public float[] castRange;
-    public float[] castTime;
 
     protected override void Start()
     {
@@ -28,10 +25,9 @@ public class Player : Character
 
         healthbar.InitStat(currentHp, maxHp);
         manabar.InitStat(currentMana, maxMana);
-        for(int i = 0; i < lastCasted.Length; i++)
-        {
-            lastCasted[i] = Time.time;
-        }
+
+        spellbook = GetComponent<SpellBook>();
+
     }
 
 
@@ -62,10 +58,6 @@ public class Player : Character
             healthbar.SetCurrentAmount(currentHp);
             manabar.SetCurrentAmount(currentMana);
         }
-        if (Input.GetButtonDown("Fire1"))
-        {
-            CastSpell(0);
-        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             StopCast();
@@ -75,41 +67,44 @@ public class Player : Character
         direction = new Vector2(rawHorizontal, rawVertical);
     }
 
-    private IEnumerator CastAnimation(int spellIndex)
+    private IEnumerator CastAnimation(Spell spell)
     {
         isCasting = true;
         animator.SetBool("isCasting", true);
-        
-
-        yield return new WaitForSeconds(castTime[spellIndex]);
-        Cast(spellIndex);
-
-        Debug.Log("Done casting");
-
+        yield return new WaitForSeconds(spell.CastTime);
+        Cast(spell);
         StopCast();
 
     }
 
-    private void Cast(int spellIndex)
+    private void Cast(Spell spell)
     {
-        lastCasted[spellIndex] = Time.time;
-        Instantiate(spellPrefab[spellIndex], transform.position, Quaternion.identity);
+        spell.LastCasted = Time.time;
+
+        SpellScript spellScript = Instantiate(spell.Prefab , transform.position , Quaternion.identity).GetComponent<SpellScript>();
+        spellScript.mousePosition = mousePosition;
     }
 
     public void CastSpell(int spellIndex)
     {
-        Vector2 mousePosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
-        float distance = Vector2.Distance(transform.position, mousePosition);
-        float timeSinceLastCast = Time.time - lastCasted[spellIndex];
-        if(distance > castRange[spellIndex])
+        if (isCasting) return;
+
+        Spell spell = spellbook.CastSpell(spellIndex);
+
+        mousePosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
+        float distance = Vector2.Distance(mousePosition, transform.position);
+        float timeSinceLastCast = Time.time - spell.LastCasted;
+
+        if(spell.HasCastRange && distance > spell.CastRange)
         {
-            direction = mousePosition - (Vector2)transform.position;
-            Move();
+            Debug.Log("Moving");
+            
+            moveRoutine = StartCoroutine(MoveRoutine(mousePosition));
         }
 
-        else if (!isMoving && !isCasting && timeSinceLastCast >= spellCooldown[spellIndex])
+        else if (!isMoving && timeSinceLastCast >= spell.Cooldown)
         {
-            castRoutine = StartCoroutine(CastAnimation(spellIndex));
+            castRoutine = StartCoroutine(CastAnimation(spell));
         }
        
     }

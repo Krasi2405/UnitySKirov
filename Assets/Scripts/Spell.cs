@@ -1,28 +1,155 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+[Serializable]
+public class Spell{
+    [SerializeField]
+    private string name;
 
-public class Spell : MonoBehaviour {
+    [SerializeField]
+    private int damage;
 
-    private Rigidbody2D rigidbody;
-    public Transform target;
-    [SerializeField] private float speed;
+    [SerializeField]
+    private Sprite icon;
 
-	void Start () {
-        target = GameObject.Find("Enemy").transform;
-        rigidbody = GetComponent<Rigidbody2D>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    [SerializeField]
+    private float speed;
 
-    private void FixedUpdate()
+    [SerializeField]
+    private float castTime;
+
+    [SerializeField]
+    private GameObject prefab;
+
+    [SerializeField]
+    private Color barColor;
+
+    [SerializeField]
+    private bool hasCastRange;
+
+    [SerializeField]
+    private float castRange;
+
+    private float lastCasted;
+
+    [SerializeField]
+    private float cooldown;
+
+    public string Name
     {
-        Vector2 direction = target.position - transform.position;
-        rigidbody.velocity = direction.normalized * speed;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        get
+        {
+            return name;
+        }
+
+
+    }
+
+    public int Damage
+    {
+        get
+        {
+            return damage;
+        }
+
+
+    }
+
+    public Sprite Icon
+    {
+        get
+        {
+            return icon;
+        }
+
+
+    }
+
+    public float Speed
+    {
+        get
+        {
+            return speed;
+        }
+
+
+    }
+
+    public float CastTime
+    {
+        get
+        {
+            return castTime;
+        }
+
+
+    }
+
+
+    public Color BarColor
+    {
+        get
+        {
+            return barColor;
+        }
+
+
+    }
+
+    public bool HasCastRange
+    {
+        get
+        {
+            return hasCastRange;
+        }
+
+
+    }
+
+    public float CastRange
+    {
+        get
+        {
+            return castRange;
+        }
+
+
+    }
+
+    public float LastCasted
+    {
+        get
+        {
+            return lastCasted;
+        }
+        set
+        {
+            lastCasted = value;
+        }
+    }
+
+    public float Cooldown
+    {
+        get
+        {
+            return cooldown;
+        }
+
+        set
+        {
+            cooldown = value;
+        }
+    }
+
+    public GameObject Prefab
+    {
+        get
+        {
+            return prefab;
+        }
+
+        set
+        {
+            prefab = value;
+        }
     }
 }

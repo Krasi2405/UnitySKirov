@@ -13,12 +13,22 @@ public class Character : MonoBehaviour {
     private Rigidbody2D rigidbody;
 
     protected Vector2 direction;
+
     protected Coroutine castRoutine;
+    protected Coroutine moveRoutine;
+
 
     protected bool isMoving {
         get
         {
             return direction.x != 0 || direction.y != 0;
+        }
+    }
+    protected bool isPlayerMoving
+    {
+        get
+        {
+            return Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0;
         }
     }
     protected bool isCasting = false;
@@ -32,7 +42,21 @@ public class Character : MonoBehaviour {
     protected virtual void Update()
     {
         HandleLayers();
+        HandleCoroutines();
     }
+
+    private void HandleCoroutines()
+    {
+        if (isPlayerMoving)
+        {
+            StopMoveRoutine();
+        }
+        if (isMoving)
+        {
+            StopCast();
+        }
+    }
+
     private void FixedUpdate()
     {
         Move();   
@@ -44,8 +68,6 @@ public class Character : MonoBehaviour {
             ActivateLayer("walk");
             animator.SetFloat("x", direction.x);
             animator.SetFloat("y", direction.y);
-
-            StopCast();
 
         }
         else if (isCasting)
@@ -79,6 +101,27 @@ public class Character : MonoBehaviour {
             isCasting = false;
             StopCoroutine(castRoutine);
             animator.SetBool("isCasting", false);
+        }
+    }
+
+    protected IEnumerator MoveRoutine(Vector2 finish)
+    {
+        float remainingDistance = Vector2.Distance(finish, rigidbody.position);
+        while(remainingDistance > Mathf.Epsilon)
+        {
+            direction = finish - rigidbody.position;
+            rigidbody.velocity = direction.normalized * movementSpeed;
+            remainingDistance = Vector2.Distance(finish, rigidbody.position);
+            yield return new WaitForFixedUpdate();
+
+        }
+    }
+
+    public void StopMoveRoutine()
+    {
+        if(moveRoutine != null)
+        {
+            StopCoroutine(moveRoutine);
         }
     }
 }
