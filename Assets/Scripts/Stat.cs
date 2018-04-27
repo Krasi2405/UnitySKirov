@@ -54,7 +54,6 @@ public class Stat : MonoBehaviour {
             image.fillAmount = Mathf.Lerp(image.fillAmount, currentFill, lerpSpeed);
             
         }
-        Debug.Log(image.fillAmount);
         image.fillAmount = currentFill;
     }
 

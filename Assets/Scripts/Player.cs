@@ -97,7 +97,7 @@ public class Player : Character
 
         if(spell.HasCastRange && distance > spell.CastRange)
         {
-            Debug.Log("Moving");
+            Debug.Log("Move to mouse position");
             
             moveRoutine = StartCoroutine(MoveRoutine(mousePosition));
         }

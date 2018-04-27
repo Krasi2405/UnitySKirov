@@ -106,6 +106,7 @@ public class Character : MonoBehaviour {
 
     protected IEnumerator MoveRoutine(Vector2 finish)
     {
+        //rigidbody.position = Vector2.MoveTowards(rigidbody.position, finish, movementSpeed);
         float remainingDistance = Vector2.Distance(finish, rigidbody.position);
         while(remainingDistance > Mathf.Epsilon)
         {
