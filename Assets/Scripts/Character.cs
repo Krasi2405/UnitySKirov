@@ -10,7 +10,7 @@ public class Character : MonoBehaviour {
 
     protected Animator animator;
 
-    private Rigidbody2D rigidbody;
+    protected Rigidbody2D rigidbody;
 
     protected Vector2 direction;
 
@@ -104,16 +104,16 @@ public class Character : MonoBehaviour {
         }
     }
 
-    protected IEnumerator MoveRoutine(Vector2 finish)
+    protected IEnumerator MoveTowards(Vector2 finish)
     {
         //rigidbody.position = Vector2.MoveTowards(rigidbody.position, finish, movementSpeed);
         float remainingDistance = Vector2.Distance(finish, rigidbody.position);
         while(remainingDistance > Mathf.Epsilon)
         {
             direction = finish - rigidbody.position;
-            rigidbody.velocity = direction.normalized * movementSpeed;
+            //rigidbody.velocity = direction.normalized * movementSpeed;
             remainingDistance = Vector2.Distance(finish, rigidbody.position);
-            yield return new WaitForFixedUpdate();
+            yield return null;
 
         }
     }

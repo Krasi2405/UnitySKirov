@@ -1418,7 +1418,7 @@ MonoBehaviour:
     speed: 5
     castTime: 2
     prefab: {fileID: 1695687064251586, guid: 6980b404125cf324e94b000e5021ebea, type: 2}
-    barColor: {r: 0, g: 0, b: 0, a: 0}
+    barColor: {r: 1, g: 0, b: 0, a: 0}
     hasCastRange: 1
     castRange: 5
     cooldown: 5
