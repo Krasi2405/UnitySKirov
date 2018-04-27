@@ -116,12 +116,14 @@ public class Character : MonoBehaviour {
             yield return null;
 
         }
+        StopMoveRoutine();
     }
 
     public void StopMoveRoutine()
     {
         if(moveRoutine != null)
         {
+            direction = Vector2.zero;
             StopCoroutine(moveRoutine);
         }
     }

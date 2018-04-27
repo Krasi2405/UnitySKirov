@@ -91,10 +91,10 @@ public class Player : Character
 
         Spell spell = spellbook.CastSpell(spellIndex);
 
-        mousePosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //TODO: distance not calculated properly
         float distance = Vector2.Distance(mousePosition, rigidbody.position);
-        Debug.Log(distance);
+        Debug.Log("mouse position:" + mousePosition + " player position:" + transform.position);
         float timeSinceLastCast = Time.time - spell.LastCasted;
 
         if(spell.HasCastRange && distance > spell.CastRange)
