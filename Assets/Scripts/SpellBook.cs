@@ -16,7 +16,7 @@ public class SpellBook : MonoBehaviour {
 
     private void Update()
     {
-        for(int i = 0; i< spells.Length; i++)
+        for(int i = 0; i < spells.Length; i++)
         {
             spells[i].CurrentCooldown -= Time.deltaTime;
         }
@@ -24,5 +24,10 @@ public class SpellBook : MonoBehaviour {
     public Spell CastSpell(int index)
     {
         return spells[index];
+    }
+
+    public void ResetCooldown(int index)
+    {
+        spells[index].CurrentCooldown = spells[index].Cooldown;
     }
 }

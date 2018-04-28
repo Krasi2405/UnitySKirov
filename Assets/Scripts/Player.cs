@@ -93,9 +93,14 @@ public class Player : Character
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         
-        if (!isMoving && spell.CurrentCooldown <= spell.Cooldown)
+        if (!isMoving && spell.CurrentCooldown <= 0)
         {
+            spellbook.ResetCooldown(spellIndex);
             castRoutine = StartCoroutine(CastAnimation(spell));
+        }
+        else
+        {
+            Debug.Log("Cooldown: " + spell.CurrentCooldown);
         }
        
     }
