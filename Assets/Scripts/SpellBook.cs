@@ -18,7 +18,10 @@ public class SpellBook : MonoBehaviour {
     {
         for(int i = 0; i< spells.Length; i++)
         {
-            spells[i].CurrentCooldown -= Time.deltaTime;
+            if (spells[i].CurrentCooldown > Mathf.Epsilon)
+            {
+                spells[i].CurrentCooldown -= Time.deltaTime;
+            }
         }
     }
     public Spell CastSpell(int index)

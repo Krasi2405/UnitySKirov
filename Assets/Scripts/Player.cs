@@ -93,7 +93,7 @@ public class Player : Character
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         
-        if (!isMoving && spell.CurrentCooldown <= spell.Cooldown)
+        if (!isMoving && spell.CurrentCooldown <= Mathf.Epsilon)
         {
             castRoutine = StartCoroutine(CastAnimation(spell));
         }
