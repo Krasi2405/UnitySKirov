@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c64794de30ff634a9a070e471dac65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 3
   mousePosition: {x: 0, y: 0}
   range: 10
 --- !u!212 &212361899788606964

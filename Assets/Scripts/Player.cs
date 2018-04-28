@@ -82,7 +82,7 @@ public class Player : Character
         spell.CurrentCooldown = spell.Cooldown;
 
         SpellScript spellScript = Instantiate(spell.Prefab , transform.position , Quaternion.identity).GetComponent<SpellScript>();
-        spellScript.mousePosition = mousePosition;
+        spellScript.SetDirection(mousePosition);
     }
 
     public void CastSpell(int spellIndex)
@@ -92,7 +92,7 @@ public class Player : Character
         Spell spell = spellbook.CastSpell(spellIndex);
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
+        
         if (!isMoving && spell.CurrentCooldown <= spell.Cooldown)
         {
             castRoutine = StartCoroutine(CastAnimation(spell));

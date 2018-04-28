@@ -23,7 +23,6 @@ public class SpellBook : MonoBehaviour {
     }
     public Spell CastSpell(int index)
     {
-
         return spells[index];
     }
 }
