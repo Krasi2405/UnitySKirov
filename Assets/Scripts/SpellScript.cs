@@ -39,9 +39,6 @@ public class SpellScript : MonoBehaviour {
         {
             Debug.LogError("WTF??? Set the direction my nigga!");
         }
-
-        Debug.Log("direction " + direction);
-        Debug.Log("move towards" + (Vector2)transform.position + direction.normalized * speed);
         /*
         rigidbody.velocity = direction.normalized * speed;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

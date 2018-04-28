@@ -1244,47 +1244,47 @@ Prefab:
     - target: {fileID: 224996609671175246, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224451747287403918, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224391111904864396, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224958331207207168, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224938969908134772, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224563578196494566, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224345949834898690, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224698216923312988, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224954998919281506, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224605051292132442, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
@@ -1294,7 +1294,7 @@ Prefab:
     - target: {fileID: 224102007018522830, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224713876162989652, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
         type: 2}
@@ -1322,6 +1322,26 @@ Prefab:
     - target: {fileID: 1497621320677124, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
       propertyPath: m_Name
       value: Glass - Spell 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224451747287403918, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.9025
+      objectReference: {fileID: 0}
+    - target: {fileID: 224451747287403918, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000022113
+      objectReference: {fileID: 0}
+    - target: {fileID: 224451747287403918, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 224451747287403918, guid: be4ce646a1c03da4fb4d9c55ac162ac6,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 21.805
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114430296557539424, guid: be4ce646a1c03da4fb4d9c55ac162ac6, type: 2}
