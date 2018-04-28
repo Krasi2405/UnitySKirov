@@ -79,7 +79,7 @@ public class Player : Character
 
     private void Cast(Spell spell)
     {
-        spell.LastCasted = Time.time;
+        spell.CurrentCooldown = spell.Cooldown;
 
         SpellScript spellScript = Instantiate(spell.Prefab , transform.position , Quaternion.identity).GetComponent<SpellScript>();
         spellScript.mousePosition = mousePosition;
@@ -92,19 +92,8 @@ public class Player : Character
         Spell spell = spellbook.CastSpell(spellIndex);
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //TODO: distance not calculated properly
-        float distance = Vector2.Distance(mousePosition, rigidbody.position);
-        Debug.Log("mouse position:" + mousePosition + " player position:" + transform.position);
-        float timeSinceLastCast = Time.time - spell.LastCasted;
 
-        if(spell.HasCastRange && distance > spell.CastRange)
-        {
-            Debug.Log("Move to mouse position");
-            
-            moveRoutine = StartCoroutine(MoveTowards(mousePosition));
-        }
-
-        else if (!isMoving && timeSinceLastCast >= spell.Cooldown)
+        if (!isMoving && spell.CurrentCooldown <= spell.Cooldown)
         {
             castRoutine = StartCoroutine(CastAnimation(spell));
         }

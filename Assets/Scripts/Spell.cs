@@ -23,16 +23,16 @@ public class Spell{
     [SerializeField]
     private Color barColor;
 
-    [SerializeField]
-    private bool hasCastRange;
-
-    [SerializeField]
-    private float castRange;
 
     private float lastCasted;
 
     [SerializeField]
     private float cooldown;
+
+    [SerializeField]
+    private bool hasCastBar;
+
+    private float currentCooldown;
 
     public string Name
     {
@@ -95,25 +95,7 @@ public class Spell{
 
     }
 
-    public bool HasCastRange
-    {
-        get
-        {
-            return hasCastRange;
-        }
 
-
-    }
-
-    public float CastRange
-    {
-        get
-        {
-            return castRange;
-        }
-
-
-    }
 
     public float LastCasted
     {
@@ -150,6 +132,32 @@ public class Spell{
         set
         {
             prefab = value;
+        }
+    }
+
+    public bool HasCastBar
+    {
+        get
+        {
+            return hasCastBar;
+        }
+
+        set
+        {
+            hasCastBar = value;
+        }
+    }
+
+    public float CurrentCooldown
+    {
+        get
+        {
+            return currentCooldown;
+        }
+
+        set
+        {
+            currentCooldown = value;
         }
     }
 }

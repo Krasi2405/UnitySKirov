@@ -1419,9 +1419,8 @@ MonoBehaviour:
     castTime: 2
     prefab: {fileID: 1695687064251586, guid: 6980b404125cf324e94b000e5021ebea, type: 2}
     barColor: {r: 1, g: 0, b: 0, a: 0}
-    hasCastRange: 1
-    castRange: 5
     cooldown: 5
+    hasCastBar: 0
   - name: Waterball
     damage: 10
     icon: {fileID: 0}
@@ -1429,9 +1428,8 @@ MonoBehaviour:
     castTime: 1
     prefab: {fileID: 1698446834538450, guid: c8ee85d5f002b744f810fe9dd63e5135, type: 2}
     barColor: {r: 0, g: 0, b: 0, a: 0}
-    hasCastRange: 1
-    castRange: 5
     cooldown: 2
+    hasCastBar: 0
   - name: Lighting strike
     damage: 40
     icon: {fileID: 0}
@@ -1439,9 +1437,8 @@ MonoBehaviour:
     castTime: 3
     prefab: {fileID: 1544479142769572, guid: dba9072988f994947aa001b15d4fc2e5, type: 2}
     barColor: {r: 0, g: 0, b: 0, a: 0}
-    hasCastRange: 1
-    castRange: 5
     cooldown: 15
+    hasCastBar: 0
   - name: Trap
     damage: 100
     icon: {fileID: 0}
@@ -1449,6 +1446,5 @@ MonoBehaviour:
     castTime: 0.5
     prefab: {fileID: 1689322394514548, guid: 95ca06df18642414582894547b1addff, type: 2}
     barColor: {r: 0, g: 0, b: 0, a: 0}
-    hasCastRange: 1
-    castRange: 0
     cooldown: 30
+    hasCastBar: 0

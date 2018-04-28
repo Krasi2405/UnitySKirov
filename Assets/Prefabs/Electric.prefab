@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4246234814700414}
   - component: {fileID: 212578342061322136}
-  - component: {fileID: 114561213138412740}
   - component: {fileID: 50657493528350496}
+  - component: {fileID: 114625411336817004}
   m_Layer: 0
   m_Name: Electric
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1544479142769572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.257799, y: -2.5051942, z: 0}
+  m_LocalPosition: {x: 3.5512528, y: -2.1500642, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &114561213138412740
+--- !u!114 &114625411336817004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -73,7 +73,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c64794de30ff634a9a070e471dac65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
+  mousePosition: {x: 0, y: 0}
+  range: 20
 --- !u!212 &212578342061322136
 SpriteRenderer:
   m_ObjectHideFlags: 1

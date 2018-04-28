@@ -8,12 +8,19 @@ public class SpellBook : MonoBehaviour {
 
     private void Start()
     {
-        for(int i = 0; i< spells.Length; i++)
+        for (int i = 0; i < spells.Length; i++)
         {
-            spells[i].LastCasted = Time.time;
+            spells[i].CurrentCooldown = 0;
         }
     }
 
+    private void Update()
+    {
+        for(int i = 0; i< spells.Length; i++)
+        {
+            spells[i].CurrentCooldown -= Time.deltaTime;
+        }
+    }
     public Spell CastSpell(int index)
     {
 

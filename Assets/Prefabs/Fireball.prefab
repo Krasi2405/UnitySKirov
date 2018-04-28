@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 61001515649063610}
   - component: {fileID: 212830483876724792}
   - component: {fileID: 50698659919030750}
-  - component: {fileID: 114149145078074952}
+  - component: {fileID: 114004634724919590}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695687064251586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6492975, y: 1.7993956, z: 0}
+  m_LocalPosition: {x: 1.3462605, y: -2.1500642, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61001515649063610
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &114149145078074952
+--- !u!114 &114004634724919590
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c64794de30ff634a9a070e471dac65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   mousePosition: {x: 0, y: 0}
+  range: 40
 --- !u!212 &212830483876724792
 SpriteRenderer:
   m_ObjectHideFlags: 1
