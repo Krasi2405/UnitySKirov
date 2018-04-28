@@ -128,11 +128,17 @@ public class Character : MonoBehaviour {
         float time = distance / movementSpeed;
         float currentTime = 0;
         Vector2 startPosition = transform.position;
+        Vector2 lastFramePos = startPosition;
         while(currentTime <= time)
         {
             currentTime += Time.deltaTime;
-            transform.position = Vector2.Lerp(startPosition, finish, currentTime / time);
+            Vector2 movedDistance = Vector2.Lerp(startPosition, finish, currentTime / time);
+            rigidbody.MovePosition(movedDistance);
+
+            direction = movedDistance - lastFramePos; // manual set direction
+            lastFramePos = movedDistance;
             
+            Debug.Log("Velocity: " + rigidbody.velocity);
             yield return new WaitForEndOfFrame();
         }
         
