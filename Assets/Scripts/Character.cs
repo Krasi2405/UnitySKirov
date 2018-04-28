@@ -106,6 +106,10 @@ public class Character : MonoBehaviour {
 
     protected IEnumerator MoveTowards(Vector2 finish)
     {
+        //* GOVNO KOD INCOMING *//
+        // - Brace yourselves //
+        //* tutututututu tutututu tututu */
+        /*
         //rigidbody.position = Vector2.MoveTowards(rigidbody.position, finish, movementSpeed);
         float remainingDistance = Vector2.Distance(finish, rigidbody.position);
         while(remainingDistance > Mathf.Epsilon)
@@ -116,7 +120,24 @@ public class Character : MonoBehaviour {
             yield return null;
 
         }
-        StopMoveRoutine();
+        StopMoveRoutine(); */
+        // - Phew your earned yourselves a breather //
+        // - Use that time wisely
+        StopCoroutine("MoveTowards");
+        float distance = Vector2.Distance(transform.position, finish);
+        float time = distance / movementSpeed;
+        float currentTime = 0;
+        Vector2 startPosition = transform.position;
+        while(currentTime <= time)
+        {
+            currentTime += Time.deltaTime;
+            transform.position = Vector2.Lerp(startPosition, finish, currentTime / time);
+            
+            yield return new WaitForEndOfFrame();
+        }
+        
+
+
     }
 
     public void StopMoveRoutine()
