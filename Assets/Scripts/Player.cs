@@ -14,7 +14,7 @@ public class Player : Character
 
     private int currentMana;
     private int currentHp;
-    private SpellBook spellbook;
+    [SerializeField] private SpellBook spellbook;
 
 
     protected override void Start()
@@ -22,12 +22,20 @@ public class Player : Character
         base.Start();
         currentHp = maxHp;
         currentMana = maxMana;
-
+        /*
         healthbar.InitStat(currentHp, maxHp);
         manabar.InitStat(currentMana, maxMana);
+        */
 
         spellbook = GetComponent<SpellBook>();
-
+        if(spellbook == null)
+        {
+            Debug.Log("No spellbook???");
+        }
+        else
+        {
+            Debug.Log("instantiate spellbook!");
+        }
     }
 
 
@@ -67,42 +75,30 @@ public class Player : Character
         direction = new Vector2(rawHorizontal, rawVertical);
     }
 
-    private IEnumerator CastAnimation(Spell spell)
+    
+    private IEnumerator CastAnimation(SpellBehaviour spell)
     {
         isCasting = true;
         animator.SetBool("isCasting", true);
-        yield return new WaitForSeconds(spell.CastTime);
+        yield return new WaitForSeconds(spell.castTime);
         Cast(spell);
         StopCast();
-
     }
 
-    private void Cast(Spell spell)
+    private void Cast(SpellBehaviour spell)
     {
-        spell.CurrentCooldown = spell.Cooldown;
-
-        SpellScript spellScript = Instantiate(spell.Prefab , transform.position , Quaternion.identity).GetComponent<SpellScript>();
-        spellScript.SetDirection(mousePosition);
+        SpellBehaviour spellInstantiation = Instantiate(spell, transform.position , Quaternion.identity).GetComponent<SpellBehaviour>();
+        spellInstantiation.ActivateSpell();
     }
 
     public void CastSpell(int spellIndex)
     {
         if (isCasting) return;
-
-        Spell spell = spellbook.CastSpell(spellIndex);
-
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         
-
-        if (!isMoving && spell.CurrentCooldown <= Mathf.Epsilon)
+        SpellBehaviour spell = spellbook.CastSpell(spellIndex);
+        if (!isMoving && spell)
         {
-            spellbook.ResetCooldown(spellIndex);
             castRoutine = StartCoroutine(CastAnimation(spell));
-        }
-        else
-        {
-            Debug.Log("Cooldown: " + spell.CurrentCooldown);
-        }
-       
+        }      
     }
 }

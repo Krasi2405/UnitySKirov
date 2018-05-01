@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 61001515649063610}
   - component: {fileID: 212830483876724792}
   - component: {fileID: 50698659919030750}
-  - component: {fileID: 114004634724919590}
+  - component: {fileID: 114793398214756950}
   m_Layer: 0
-  m_Name: Fireball
+  m_Name: FireballSpell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &114004634724919590
+--- !u!114 &114793398214756950
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,12 +96,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695687064251586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c64794de30ff634a9a070e471dac65c, type: 3}
+  m_Script: {fileID: 11500000, guid: 376f6676fc41d874e83891f4335b6ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  mousePosition: {x: 0, y: 0}
-  range: 40
+  icon: {fileID: 0}
+  cooldown: 5
+  castTime: 0.5
+  prefab: {fileID: 0}
+  currentCooldown: 0
+  speed: 5
+  health: 5
 --- !u!212 &212830483876724792
 SpriteRenderer:
   m_ObjectHideFlags: 1
