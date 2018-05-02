@@ -102,10 +102,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   cooldown: 5
   castTime: 0.5
-  prefab: {fileID: 0}
-  currentCooldown: 0
+  currentCooldown: 2.7129502
   speed: 5
-  health: 5
+  range: 5
+  damage: 1
 --- !u!212 &212830483876724792
 SpriteRenderer:
   m_ObjectHideFlags: 1
