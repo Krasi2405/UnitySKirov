@@ -16,6 +16,13 @@ public class Stat : MonoBehaviour {
 
     void Start () {
         image = GetComponent<Image>();
+        if (image)
+        {
+            Debug.Log("Initialized image");
+        }
+        else {
+            Debug.Log("not image");
+        }
         currentAmount = maxAmount;
     }
 
@@ -46,7 +53,10 @@ public class Stat : MonoBehaviour {
             currentAmount = amount;
         }
         currentFill = currentAmount / maxAmount;
-        statText.text = currentAmount + " / " + maxAmount;
+        if (statText != null)
+        {
+            statText.text = currentAmount + " / " + maxAmount;
+        }
     }
 
     private void Update()

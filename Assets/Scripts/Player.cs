@@ -76,6 +76,8 @@ public class Player : Character
     {
         SpellBehaviour spellInstantiation = Instantiate(spell, transform.position , Quaternion.identity);
         spellInstantiation.ActivateSpell();
+
+        StartCoroutine(UImanager.Instance.Cooldown(spell.cooldown, spell.index));
         Debug.Log("Cast spell!");
         Debug.Log(spellInstantiation);
     }

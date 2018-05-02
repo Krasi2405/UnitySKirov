@@ -20,8 +20,6 @@ public abstract class ProjectileSpell : SpellBehaviour {
         // Set velocity
         GetComponent<Rigidbody2D>().velocity = offset.normalized * speed;
 
-        // set cooldown
-        currentCooldown = cooldown;
         //destroy after it travels certain distance
         Destroy(gameObject, range / speed); // S = v * t => t = S/v ; lifetime of the spell
         

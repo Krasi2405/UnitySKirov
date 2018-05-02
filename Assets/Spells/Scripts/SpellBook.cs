@@ -5,6 +5,13 @@ using UnityEngine;
 public class SpellBook : MonoBehaviour {
 
     [SerializeField] private SpellBehaviour[] spells;
+    private void Start()
+    {
+        for(int i = 0; i< spells.Length; i++)
+        {
+            spells[i].index = i;
+        }    
+    }
 
     private void Update()
     {

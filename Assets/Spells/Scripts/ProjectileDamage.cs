@@ -8,6 +8,7 @@ public class ProjectileDamage : ProjectileSpell {
     protected override void OnHitBehaviour(GameObject other)
     {
         if (other.tag == "Player") return;
+        Debug.Log("Dealing " + damage + " damage to enemy");
         other.GetComponent<Enemy>().TakeMagicalDamage(damage);
         Destroy(gameObject);
     }

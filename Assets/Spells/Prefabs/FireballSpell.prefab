@@ -100,12 +100,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  cooldown: 5
+  cooldown: 0.3
   castTime: 0.5
-  currentCooldown: 2.7129502
+  index: 0
+  currentCooldown: -0.012675449
   speed: 5
   range: 5
-  damage: 1
+  damage: 250
 --- !u!212 &212830483876724792
 SpriteRenderer:
   m_ObjectHideFlags: 1

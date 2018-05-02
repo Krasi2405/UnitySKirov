@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject()) // check if player is not clickng UI object
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.positiveInfinity);
-            if(hit.collider != null)
+            if(hit.collider != null) // we click on a target
             {
                 if (target != null) {
                     target.Deselect();
@@ -27,9 +27,11 @@ public class GameManager : MonoBehaviour
                 target = hit.collider.GetComponent<NPC>();
 
                 player.target = target.Select();
+                UImanager.Instance.ShowTargetFrame(target);
             }
-            else
+            else // we click out of the target
             {
+                UImanager.Instance.HideTargetFrame();
                 if(target != null)
                 {
                     target.Deselect();

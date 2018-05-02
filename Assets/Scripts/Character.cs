@@ -28,6 +28,7 @@ public class Character : MonoBehaviour {
     [SerializeField] private int maxHp = 500;
     protected int currentHp;
 
+    [SerializeField] protected float deathAnimationTime = 1;
 
     [Range(0, 99)] public float armor = 5f;
 
@@ -37,7 +38,7 @@ public class Character : MonoBehaviour {
 
     public float respawnTime;
 
-    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Vector2 spawnPosition;
 
     protected bool isMoving {
         get
@@ -207,7 +208,8 @@ public class Character : MonoBehaviour {
             healthbar.SetCurrentAmount(currentHp);
             if (isDead)
             {
-
+                StartCoroutine(DeadSequence());
+                
             }
         }
 
@@ -219,10 +221,24 @@ public class Character : MonoBehaviour {
         healthbar.SetCurrentAmount(currentHp);
         if (isDead)
         {
-
+            StartCoroutine(DeadSequence());
         }
 
     }
 
+    protected virtual IEnumerator DeadSequence()
+    {
+
+        animator.SetTrigger("die");
+        yield return new WaitForSeconds(deathAnimationTime);
+
+        Destroy(gameObject);
+
+        yield return new WaitForSeconds(respawnTime);
+        Instantiate(gameObject);
+        rigidbody.position = spawnPosition + new Vector2(UnityEngine.Random.Range(0, 10), UnityEngine.Random.Range(0, 10));
+        currentHp = maxHp;
+
+    }
 
 }

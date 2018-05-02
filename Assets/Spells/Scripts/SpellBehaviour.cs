@@ -10,6 +10,8 @@ public abstract class SpellBehaviour : MonoBehaviour {
     [SerializeField] public float cooldown;
     [SerializeField] public float castTime;
 
+    public int index;
+
     public float currentCooldown = 0;
 
     public void ActivateSpell()
