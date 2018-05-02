@@ -74,8 +74,10 @@ public class Player : Character
 
     private void Cast(SpellBehaviour spell)
     {
-        SpellBehaviour spellInstantiation = Instantiate(spell.prefab, transform.position , Quaternion.identity).GetComponent<SpellBehaviour>();
+        SpellBehaviour spellInstantiation = Instantiate(spell, transform.position , Quaternion.identity);
         spellInstantiation.ActivateSpell();
+        Debug.Log("Cast spell!");
+        Debug.Log(spellInstantiation);
     }
 
     public void CastSpell(int spellIndex)

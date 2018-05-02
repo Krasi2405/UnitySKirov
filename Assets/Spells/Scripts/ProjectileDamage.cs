@@ -7,7 +7,7 @@ public class ProjectileDamage : ProjectileSpell {
 
     protected override void OnHitBehaviour(GameObject other)
     {
-        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        if (other.tag == "Player") return;
         other.GetComponent<Enemy>().TakeMagicalDamage(damage);
         Destroy(gameObject);
     }

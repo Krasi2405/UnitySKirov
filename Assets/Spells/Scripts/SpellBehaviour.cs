@@ -9,7 +9,6 @@ public abstract class SpellBehaviour : MonoBehaviour {
     [SerializeField] public Sprite icon;
     [SerializeField] public float cooldown;
     [SerializeField] public float castTime;
-    [SerializeField] public GameObject prefab;
 
     public float currentCooldown = 0;
 
