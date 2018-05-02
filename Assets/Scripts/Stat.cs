@@ -7,12 +7,14 @@ public class Stat : MonoBehaviour {
 
     [SerializeField]private float lerpSpeed = 1;
     [SerializeField]private Text statText;
+
     private float maxAmount;
     private float currentAmount;
     private Image image;
     private float currentFill = 1;
 
-	void Start () {
+
+    void Start () {
         image = GetComponent<Image>();
         currentAmount = maxAmount;
     }

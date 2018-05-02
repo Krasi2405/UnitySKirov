@@ -5,27 +5,16 @@ using System;
 
 public class Player : Character
 {
-    [SerializeField] private Stat healthbar;
-    [SerializeField] private Stat manabar;
+
     private Vector2 mousePosition;
 
-    public int maxHp = 500;
-    public int maxMana = 200;
+    private SpellBook spellbook;
 
-    private int currentMana;
-    private int currentHp;
-    [SerializeField] private SpellBook spellbook;
-
+    [HideInInspector]public Transform target;
 
     protected override void Start()
     {
         base.Start();
-        currentHp = maxHp;
-        currentMana = maxMana;
-        /*
-        healthbar.InitStat(currentHp, maxHp);
-        manabar.InitStat(currentMana, maxMana);
-        */
 
         spellbook = GetComponent<SpellBook>();
         if(spellbook == null)
@@ -55,16 +44,14 @@ public class Player : Character
         if (Input.GetKey(KeyCode.I))
         {
             currentHp -= 10;
-            currentMana -= 10;
+
             healthbar.SetCurrentAmount(currentHp);
-            manabar.SetCurrentAmount(currentMana);
         }
         if (Input.GetKey(KeyCode.O))
         {
             currentHp += 10;
-            currentMana += 10;
+
             healthbar.SetCurrentAmount(currentHp);
-            manabar.SetCurrentAmount(currentMana);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -87,7 +74,7 @@ public class Player : Character
 
     private void Cast(SpellBehaviour spell)
     {
-        SpellBehaviour spellInstantiation = Instantiate(spell, transform.position , Quaternion.identity).GetComponent<SpellBehaviour>();
+        SpellBehaviour spellInstantiation = Instantiate(spell.prefab, transform.position , Quaternion.identity).GetComponent<SpellBehaviour>();
         spellInstantiation.ActivateSpell();
     }
 

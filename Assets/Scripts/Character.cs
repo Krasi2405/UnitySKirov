@@ -3,8 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
+
 public class Character : MonoBehaviour {
 
+    [SerializeField]
+    protected Transform hitbox;
 
     public int movementSpeed = 1;
 
@@ -17,6 +23,21 @@ public class Character : MonoBehaviour {
     protected Coroutine castRoutine;
     protected Coroutine moveRoutine;
 
+    [SerializeField] protected Stat healthbar;
+
+    [SerializeField] private int maxHp = 500;
+    protected int currentHp;
+
+
+    [Range(0, 99)] public float armor = 5f;
+
+    public float missChance = 0.1f;
+
+    [Range(0, 99)] public float magicReduction;
+
+    public float respawnTime;
+
+    [SerializeField] private Transform spawnPoint;
 
     protected bool isMoving {
         get
@@ -31,12 +52,25 @@ public class Character : MonoBehaviour {
             return Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0;
         }
     }
+
+    public bool isDead {
+        get
+        {
+            return currentHp <= 0;
+        }
+    }
+
     protected bool isCasting = false;
 
     protected virtual void Start()
     {
+
+        currentHp = maxHp;
+        healthbar.InitStat(currentHp, maxHp);
+
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
     }
 
     protected virtual void Update()
@@ -154,4 +188,41 @@ public class Character : MonoBehaviour {
             StopCoroutine(moveRoutine);
         }
     }
+
+    public virtual void TakePureDamage(int amount)
+    {
+        currentHp -= amount;
+        healthbar.SetCurrentAmount(currentHp);
+        if (isDead)
+        {
+
+        }
+    }
+    public virtual void TakePhysicalDamage(int amount)
+    {
+        if (UnityEngine.Random.Range(0, 1) > missChance)
+        {
+            float loss = ((100 - armor) / 100) * amount;
+            currentHp = currentHp - Mathf.RoundToInt(loss);
+            healthbar.SetCurrentAmount(currentHp);
+            if (isDead)
+            {
+
+            }
+        }
+
+    }
+    public virtual void TakeMagicalDamage(int amount)
+    {
+        float loss = ((100 - magicReduction) / 100) * amount;
+        currentHp = currentHp - Mathf.RoundToInt(loss);
+        healthbar.SetCurrentAmount(currentHp);
+        if (isDead)
+        {
+
+        }
+
+    }
+
+
 }
