@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 61001515649063610}
   - component: {fileID: 212830483876724792}
   - component: {fileID: 50698659919030750}
-  - component: {fileID: 114793398214756950}
+  - component: {fileID: 114517084690227958}
+  - component: {fileID: 114707881738061380}
   m_Layer: 0
   m_Name: FireballSpell
   m_TagString: Untagged
@@ -88,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &114793398214756950
+--- !u!114 &114517084690227958
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,17 +97,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695687064251586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 376f6676fc41d874e83891f4335b6ae3, type: 3}
+  m_Script: {fileID: 11500000, guid: abb316f73e65d8642b987e8b6b4acdc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  cooldown: 0.3
-  castTime: 0.5
+  cooldown: 5
+  castTime: 0.25
   index: 0
-  currentCooldown: -0.012675449
+  currentCooldown: 0
   speed: 5
-  range: 5
-  damage: 250
+  range: 4
+--- !u!114 &114707881738061380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1695687064251586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6aece1de58f8f341a6689ec0d995acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 15
 --- !u!212 &212830483876724792
 SpriteRenderer:
   m_ObjectHideFlags: 1

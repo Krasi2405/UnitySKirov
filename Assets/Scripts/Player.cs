@@ -75,7 +75,7 @@ public class Player : Character
     private void Cast(SpellBehaviour spell)
     {
         SpellBehaviour spellInstantiation = Instantiate(spell, transform.position , Quaternion.identity);
-        spellInstantiation.ActivateSpell();
+        spellInstantiation.ActivateSpell(this); // this e Player, koito inheritva ot Character
 
         StartCoroutine(UImanager.Instance.Cooldown(spell.cooldown, spell.index));
         Debug.Log("Cast spell!");

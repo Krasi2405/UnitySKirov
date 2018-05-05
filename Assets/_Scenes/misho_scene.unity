@@ -2984,17 +2984,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114873498621707040, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
-        type: 2}
-      propertyPath: spells.Array.data[0]
-      value: 
-      objectReference: {fileID: 114793398214756950, guid: 6980b404125cf324e94b000e5021ebea,
-        type: 2}
-    - target: {fileID: 114784536047996554, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
-        type: 2}
-      propertyPath: hitbox
-      value: 
-      objectReference: {fileID: 1155636345}
     - target: {fileID: 114784536047996554, guid: 0f299eae64b7eee4a8d9235f8e68ca0d,
         type: 2}
       propertyPath: healthbar
