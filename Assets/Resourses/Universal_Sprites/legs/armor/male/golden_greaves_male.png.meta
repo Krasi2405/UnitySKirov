@@ -1,0 +1,2782 @@
+fileFormatVersion: 2
+guid: 3bd7eeff5a021c740b603fc5fdfeb6d1
+timeCreated: 1525456230
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: golden_greaves_male_0
+    21300002: golden_greaves_male_1
+    21300004: golden_greaves_male_2
+    21300006: golden_greaves_male_3
+    21300008: golden_greaves_male_4
+    21300010: golden_greaves_male_5
+    21300012: golden_greaves_male_6
+    21300014: golden_greaves_male_7
+    21300016: golden_greaves_male_8
+    21300018: golden_greaves_male_9
+    21300020: golden_greaves_male_10
+    21300022: golden_greaves_male_11
+    21300024: golden_greaves_male_12
+    21300026: golden_greaves_male_13
+    21300028: golden_greaves_male_14
+    21300030: golden_greaves_male_15
+    21300032: golden_greaves_male_16
+    21300034: golden_greaves_male_17
+    21300036: golden_greaves_male_18
+    21300038: golden_greaves_male_19
+    21300040: golden_greaves_male_20
+    21300042: golden_greaves_male_21
+    21300044: golden_greaves_male_22
+    21300046: golden_greaves_male_23
+    21300048: golden_greaves_male_24
+    21300050: golden_greaves_male_25
+    21300052: golden_greaves_male_26
+    21300054: golden_greaves_male_27
+    21300056: golden_greaves_male_28
+    21300058: golden_greaves_male_29
+    21300060: golden_greaves_male_30
+    21300062: golden_greaves_male_31
+    21300064: golden_greaves_male_32
+    21300066: golden_greaves_male_33
+    21300068: golden_greaves_male_34
+    21300070: golden_greaves_male_35
+    21300072: golden_greaves_male_36
+    21300074: golden_greaves_male_37
+    21300076: golden_greaves_male_38
+    21300078: golden_greaves_male_39
+    21300080: golden_greaves_male_40
+    21300082: golden_greaves_male_41
+    21300084: golden_greaves_male_42
+    21300086: golden_greaves_male_43
+    21300088: golden_greaves_male_44
+    21300090: golden_greaves_male_45
+    21300092: golden_greaves_male_46
+    21300094: golden_greaves_male_47
+    21300096: golden_greaves_male_48
+    21300098: golden_greaves_male_49
+    21300100: golden_greaves_male_50
+    21300102: golden_greaves_male_51
+    21300104: golden_greaves_male_52
+    21300106: golden_greaves_male_53
+    21300108: golden_greaves_male_54
+    21300110: golden_greaves_male_55
+    21300112: golden_greaves_male_56
+    21300114: golden_greaves_male_57
+    21300116: golden_greaves_male_58
+    21300118: golden_greaves_male_59
+    21300120: golden_greaves_male_60
+    21300122: golden_greaves_male_61
+    21300124: golden_greaves_male_62
+    21300126: golden_greaves_male_63
+    21300128: golden_greaves_male_64
+    21300130: golden_greaves_male_65
+    21300132: golden_greaves_male_66
+    21300134: golden_greaves_male_67
+    21300136: golden_greaves_male_68
+    21300138: golden_greaves_male_69
+    21300140: golden_greaves_male_70
+    21300142: golden_greaves_male_71
+    21300144: golden_greaves_male_72
+    21300146: golden_greaves_male_73
+    21300148: golden_greaves_male_74
+    21300150: golden_greaves_male_75
+    21300152: golden_greaves_male_76
+    21300154: golden_greaves_male_77
+    21300156: golden_greaves_male_78
+    21300158: golden_greaves_male_79
+    21300160: golden_greaves_male_80
+    21300162: golden_greaves_male_81
+    21300164: golden_greaves_male_82
+    21300166: golden_greaves_male_83
+    21300168: golden_greaves_male_84
+    21300170: golden_greaves_male_85
+    21300172: golden_greaves_male_86
+    21300174: golden_greaves_male_87
+    21300176: golden_greaves_male_88
+    21300178: golden_greaves_male_89
+    21300180: golden_greaves_male_90
+    21300182: golden_greaves_male_91
+    21300184: golden_greaves_male_92
+    21300186: golden_greaves_male_93
+    21300188: golden_greaves_male_94
+    21300190: golden_greaves_male_95
+    21300192: golden_greaves_male_96
+    21300194: golden_greaves_male_97
+    21300196: golden_greaves_male_98
+    21300198: golden_greaves_male_99
+    21300200: golden_greaves_male_100
+    21300202: golden_greaves_male_101
+    21300204: golden_greaves_male_102
+    21300206: golden_greaves_male_103
+    21300208: golden_greaves_male_104
+    21300210: golden_greaves_male_105
+    21300212: golden_greaves_male_106
+    21300214: golden_greaves_male_107
+    21300216: golden_greaves_male_108
+    21300218: golden_greaves_male_109
+    21300220: golden_greaves_male_110
+    21300222: golden_greaves_male_111
+    21300224: golden_greaves_male_112
+    21300226: golden_greaves_male_113
+    21300228: golden_greaves_male_114
+    21300230: golden_greaves_male_115
+    21300232: golden_greaves_male_116
+    21300234: golden_greaves_male_117
+    21300236: golden_greaves_male_118
+    21300238: golden_greaves_male_119
+    21300240: golden_greaves_male_120
+    21300242: golden_greaves_male_121
+    21300244: golden_greaves_male_122
+    21300246: golden_greaves_male_123
+    21300248: golden_greaves_male_124
+    21300250: golden_greaves_male_125
+    21300252: golden_greaves_male_126
+    21300254: golden_greaves_male_127
+    21300256: golden_greaves_male_128
+    21300258: golden_greaves_male_129
+    21300260: golden_greaves_male_130
+    21300262: golden_greaves_male_131
+    21300264: golden_greaves_male_132
+    21300266: golden_greaves_male_133
+    21300268: golden_greaves_male_134
+    21300270: golden_greaves_male_135
+    21300272: golden_greaves_male_136
+    21300274: golden_greaves_male_137
+    21300276: golden_greaves_male_138
+    21300278: golden_greaves_male_139
+    21300280: golden_greaves_male_140
+    21300282: golden_greaves_male_141
+    21300284: golden_greaves_male_142
+    21300286: golden_greaves_male_143
+    21300288: golden_greaves_male_144
+    21300290: golden_greaves_male_145
+    21300292: golden_greaves_male_146
+    21300294: golden_greaves_male_147
+    21300296: golden_greaves_male_148
+    21300298: golden_greaves_male_149
+    21300300: golden_greaves_male_150
+    21300302: golden_greaves_male_151
+    21300304: golden_greaves_male_152
+    21300306: golden_greaves_male_153
+    21300308: golden_greaves_male_154
+    21300310: golden_greaves_male_155
+    21300312: golden_greaves_male_156
+    21300314: golden_greaves_male_157
+    21300316: golden_greaves_male_158
+    21300318: golden_greaves_male_159
+    21300320: golden_greaves_male_160
+    21300322: golden_greaves_male_161
+    21300324: golden_greaves_male_162
+    21300326: golden_greaves_male_163
+    21300328: golden_greaves_male_164
+    21300330: golden_greaves_male_165
+    21300332: golden_greaves_male_166
+    21300334: golden_greaves_male_167
+    21300336: golden_greaves_male_168
+    21300338: golden_greaves_male_169
+    21300340: golden_greaves_male_170
+    21300342: golden_greaves_male_171
+    21300344: golden_greaves_male_172
+    21300346: golden_greaves_male_173
+    21300348: golden_greaves_male_174
+    21300350: golden_greaves_male_175
+    21300352: golden_greaves_male_176
+    21300354: golden_greaves_male_177
+    21300356: golden_greaves_male_178
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: golden_greaves_male_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1286
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1286
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1286
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1286
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1286
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1286
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1286
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1223
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_10
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_13
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1223
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1159
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_15
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1159
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_16
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1159
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_17
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1159
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_18
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1159
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1159
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_20
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1159
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1095
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_22
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1095
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_23
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1095
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_24
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1095
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_25
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1095
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_26
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1095
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_27
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1095
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_28
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1030
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_29
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1028
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_30
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_31
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_33
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_34
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_35
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 967
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 967
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_38
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 967
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_39
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 967
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_40
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 967
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_41
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 967
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_42
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 967
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_43
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 967
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_44
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 903
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_45
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 903
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_46
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 904
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_47
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 904
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_48
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 904
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_49
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 904
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_50
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 904
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_51
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 904
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_52
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 839
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_53
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 839
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_54
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 839
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_55
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 839
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_56
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 839
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_57
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 839
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_58
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 839
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_59
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 839
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_60
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 775
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_61
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 775
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_62
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 774
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_63
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 773
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_64
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 774
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_65
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 775
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_66
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 774
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_67
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 774
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_68
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 775
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_69
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 711
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_70
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 711
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_71
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 710
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_72
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 711
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_73
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 712
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 710
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_75
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 710
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_76
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 711
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_77
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 711
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_78
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 711
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_79
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 647
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_80
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 647
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_81
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 647
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_82
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 646
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_83
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 647
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_84
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 647
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_85
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 647
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_86
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 646
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_87
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 647
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_88
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 583
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_89
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 582
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_90
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 583
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_91
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 583
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_92
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 584
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_93
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 582
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_94
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 582
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_95
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 583
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_96
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 583
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_97
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 583
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_98
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 518
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_99
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 517
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_100
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 517
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_101
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 517
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_102
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 517
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_103
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 517
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_104
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 455
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_105
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 455
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_106
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 455
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_107
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 455
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_108
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 455
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_109
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 455
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_110
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 391
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_111
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 391
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_112
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 391
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_113
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 390
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_114
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 390
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_115
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 390
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_116
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 327
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_117
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 327
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_118
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 327
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_119
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 327
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_120
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 327
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_121
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 327
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_122
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 262
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_123
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 260
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_124
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_125
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_126
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_127
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_128
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_129
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_130
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_131
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_132
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_133
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_134
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 261
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_135
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 199
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_136
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 199
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_137
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 199
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_138
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_139
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_140
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_141
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_142
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_143
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_144
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_145
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_146
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 199
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_147
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 199
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_148
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 135
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_149
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 135
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_150
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 136
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_151
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 135
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_152
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_153
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_154
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_155
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_156
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_157
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_158
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_159
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 135
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_160
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 135
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_161
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 71
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_162
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 71
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_163
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 71
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_164
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_165
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_166
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_167
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_168
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_169
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_170
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_171
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_172
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_173
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 71
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_174
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 23
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_175
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 7
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_176
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 6
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_177
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 3
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: golden_greaves_male_178
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 3
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
