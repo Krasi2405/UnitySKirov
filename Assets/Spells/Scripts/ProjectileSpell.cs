@@ -40,6 +40,7 @@ public class ProjectileSpell : SpellBehaviour {
         if (hitCharacter && hitCharacter != spellCaster) // && hitCharacter.tag != "Friendly" tova e za da ne si udrq sobstveniq otbor.
         {
             ApplyAllEffects(hitCharacter);
+            Destroy(gameObject);
         }
     }
 }

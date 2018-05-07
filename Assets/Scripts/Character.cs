@@ -25,8 +25,8 @@ public class Character : MonoBehaviour {
 
     [SerializeField] protected Stat healthbar;
 
-    [SerializeField] private int maxHp = 500;
-    protected int currentHp;
+    [SerializeField] private float maxHp = 500;
+    protected float currentHp;
 
     [SerializeField] protected float deathAnimationTime = 1;
 
@@ -190,7 +190,7 @@ public class Character : MonoBehaviour {
         }
     }
 
-    public virtual void TakePureDamage(int amount)
+    public virtual void TakePureDamage(float amount)
     {
         currentHp -= amount;
         healthbar.SetCurrentAmount(currentHp);
@@ -199,7 +199,7 @@ public class Character : MonoBehaviour {
 
         }
     }
-    public virtual void TakePhysicalDamage(int amount)
+    public virtual void TakePhysicalDamage(float amount)
     {
         if (UnityEngine.Random.Range(0, 1) > missChance)
         {
@@ -214,7 +214,7 @@ public class Character : MonoBehaviour {
         }
 
     }
-    public virtual void TakeMagicalDamage(int amount)
+    public virtual void TakeMagicalDamage(float amount)
     {
         float loss = ((100 - magicReduction) / 100) * amount;
         currentHp = currentHp - Mathf.RoundToInt(loss);
