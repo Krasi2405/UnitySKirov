@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ProjectileSpell : SpellBehaviour {
+public class ProjectileSpell : SpellBehaviour {
 
     [SerializeField] public float speed;
     [SerializeField] public float range;
@@ -32,12 +32,15 @@ public abstract class ProjectileSpell : SpellBehaviour {
         return true;
     }
 
-    protected abstract void OnHitBehaviour(GameObject other);
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Projectile spellHit");
-        OnHitBehaviour(other.gameObject);
-    }
+        // TODO: Da se napravi sus physics layerite.
+        Character hitCharacter = other.GetComponent<Character>();
 
+        if (hitCharacter && hitCharacter != spellCaster) // && hitCharacter.tag != "Friendly" tova e za da ne si udrq sobstveniq otbor.
+        {
+            ApplyAllEffects(hitCharacter);
+            Destroy(gameObject);
+        }
+    }
 }
